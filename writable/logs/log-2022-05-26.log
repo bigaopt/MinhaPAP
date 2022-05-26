@@ -1,0 +1,130 @@
+CRITICAL - 2022-05-26 08:37:48 --> Call to undefined method App\Models\AdminModel::buscar_por_nome
+#0 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(21): CodeIgniter\Model->__call('buscar_por_nome', Array)
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->logar()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-26 08:42:08 --> Invalid file: utilizador/registo.php
+#0 C:\xampp\htdocs\Pap\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utilizador/regi...')
+#1 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('utilizador/regi...', Array, true)
+#2 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(60): view('utilizador/regi...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registo()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:42:19 --> Invalid file: utilizador/registo.php
+#0 C:\xampp\htdocs\Pap\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utilizador/regi...')
+#1 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('utilizador/regi...', Array, true)
+#2 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(60): view('utilizador/regi...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registo()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:42:21 --> Invalid file: utilizador/registo.php
+#0 C:\xampp\htdocs\Pap\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utilizador/regi...')
+#1 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('utilizador/regi...', Array, true)
+#2 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(60): view('utilizador/regi...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registo()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:42:22 --> Invalid file: utilizador/registo.php
+#0 C:\xampp\htdocs\Pap\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utilizador/regi...')
+#1 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('utilizador/regi...', Array, true)
+#2 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(60): view('utilizador/regi...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registo()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:42:23 --> Invalid file: utilizador/registo.php
+#0 C:\xampp\htdocs\Pap\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utilizador/regi...')
+#1 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('utilizador/regi...', Array, true)
+#2 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(60): view('utilizador/regi...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registo()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:42:47 --> Invalid file: utilizador/registo.php
+#0 C:\xampp\htdocs\Pap\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utilizador/regi...')
+#1 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('utilizador/regi...', Array, true)
+#2 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(60): view('utilizador/regi...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registo()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-26 08:43:16 --> Invalid file: utilizador/registo.php
+#0 C:\xampp\htdocs\Pap\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('utilizador/regi...')
+#1 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('utilizador/regi...', Array, true)
+#2 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(60): view('utilizador/regi...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registo()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2022-05-26 08:50:21 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-05-26 08:50:21 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\xampp\htdocs\Pap\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\Pap\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registar()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-05-26 08:50:33 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-05-26 08:50:33 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\xampp\htdocs\Pap\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\Pap\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registar()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-05-26 08:50:48 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-05-26 08:50:48 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\xampp\htdocs\Pap\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\Pap\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(79): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registar()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-05-26 08:52:00 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-05-26 08:52:00 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\xampp\htdocs\Pap\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ad...', 0)
+#1 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 C:\xampp\htdocs\Pap\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 C:\xampp\htdocs\Pap\app\Controllers\AdminController.php(80): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\AdminController->registar()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

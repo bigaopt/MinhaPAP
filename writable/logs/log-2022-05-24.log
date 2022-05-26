@@ -1,0 +1,511 @@
+CRITICAL - 2022-05-24 03:30:38 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResult
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_numero_vitorias_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 03:30:58 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, tipo_resultado given
+#0 C:\xampp\htdocs\Pap\system\Database\MySQLi\Result.php(148): mysqli_result->fetch_object('tipo_resultado')
+#1 C:\xampp\htdocs\Pap\system\Database\BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('tipo_resultado')
+#2 C:\xampp\htdocs\Pap\system\Database\BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('tipo_resultado')
+#3 C:\xampp\htdocs\Pap\app\Models\Jogos.php(39): CodeIgniter\Database\BaseResult->getResult('tipo_resultado')
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_numero_vitorias_na_equipa_juniores()
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 03:32:48 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_numero_vitorias_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 03:33:11 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+#0 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Jogo...')
+#2 C:\xampp\htdocs\Pap\app\Controllers\Main.php(68): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Jogo...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-24 03:46:16 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_numero_vitorias_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 03:46:26 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_numero_vitorias_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 03:46:28 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_numero_vitorias_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 03:46:41 --> Undefined constant "App\Models\teste"
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_numero_vitorias_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 03:54:44 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Jogo...')
+#2 C:\xampp\htdocs\Pap\app\Controllers\Main.php(68): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Jogo...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-24 03:55:21 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Jogo...')
+#2 C:\xampp\htdocs\Pap\app\Controllers\Main.php(68): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Jogo...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-24 04:00:19 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_numero_vitorias_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 04:26:09 --> Call to undefined method App\Models\Jogos::atualiza_numero_empates_na_equipa_juniores
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(78): CodeIgniter\Model->__call('atualiza_numero...', Array)
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 04:26:44 --> Call to undefined method App\Models\Jogos::atualiza_numero_empates_na_equipa_juniores
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(78): CodeIgniter\Model->__call('atualiza_numero...', Array)
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 04:26:58 --> Call to undefined method App\Models\Jogos::atualiza_numero_empates_na_equipa_juniores
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(78): CodeIgniter\Model->__call('atualiza_numero...', Array)
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 04:54:14 --> Undefined variable $equipa
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(58): view('Pages/escaloes/...')
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 05:00:27 --> Undefined variable $equipa
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(58): view('Pages/escaloes/...')
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 05:01:35 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#2 C:\xampp\htdocs\Pap\app\Controllers\Main.php(58): view('Pages/escaloes/...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-24 06:15:09 --> Undefined variable $equipa
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(58): view('Pages/escaloes/...')
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 06:20:28 --> syntax error, unexpected token "}", expecting variable
+#0 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Joga...')
+#2 C:\xampp\htdocs\Pap\app\Controllers\Main.php(64): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Joga...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-24 06:23:25 --> Call to undefined method App\Models\Jogos::atualiza_numero_derrotas_na_equipa_juniores
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(80): CodeIgniter\Model->__call('atualiza_numero...', Array)
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:05:06 --> Object of class mysqli_result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:07:17 --> Object of class mysqli_result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:07:19 --> Object of class mysqli_result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:07:26 --> Object of class mysqli_result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:07:54 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:07:55 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:08:23 --> Object of class mysqli_result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:08:24 --> Object of class mysqli_result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Jogos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:09:28 --> Cannot use object of type mysqli_result as array
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:16:34 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result * int
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:16:36 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result * int
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:17:17 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result * int
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Jogos->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:19:52 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result * int
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:21:36 --> syntax error, unexpected token ")"
+#0 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\Pap\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Equi...')
+#2 C:\xampp\htdocs\Pap\app\Controllers\Main.php(66): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Equi...')
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-24 08:21:44 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result * int
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:22:55 --> Unsupported operand types: CodeIgniter\Database\MySQLi\Result * int
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:23:13 --> Unsupported operand types: stdClass * int
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:24:18 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 08:24:35 --> Unsupported operand types: stdClass * int
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-05-24 08:36:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`' at line 1
+CRITICAL - 2022-05-24 08:36:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`' at line 1
+#0 C:\xampp\htdocs\Pap\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT vitorias...', 0)
+#1 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT vitorias...')
+#2 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT vitorias...')
+#3 C:\xampp\htdocs\Pap\app\Models\Equipas.php(41): CodeIgniter\Database\BaseConnection->query('SELECT vitorias...')
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-05-24 08:36:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`' at line 1
+CRITICAL - 2022-05-24 08:36:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`' at line 1
+#0 C:\xampp\htdocs\Pap\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT vitorias...', 0)
+#1 C:\xampp\htdocs\Pap\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT vitorias...')
+#2 C:\xampp\htdocs\Pap\app\Models\Equipas.php(41): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT vitorias...')
+#3 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-24 08:37:09 --> Object of class mysqli_result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Equipas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:37:31 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Equipas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:37:37 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Equipas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:37:38 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Equipas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 08:47:28 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\xampp\htdocs\Pap\app\Models\Equipas.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 41)
+#1 C:\xampp\htdocs\Pap\app\Controllers\Main.php(76): App\Models\Equipas->atualiza_placar_na_equipa_juniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#4 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-05-24 09:23:17 --> Undefined variable $equipa
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(58): view('Pages/escaloes/...')
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 10:09:04 --> Undefined variable $equipa
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(58): view('Pages/escaloes/...')
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 10:24:05 --> Undefined variable $equipa
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 43)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(58): view('Pages/escaloes/...')
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 10:29:17 --> Call to undefined method App\Models\Equipas::dados_equipa_seniores
+#0 C:\xampp\htdocs\Pap\app\Controllers\Main.php(58): CodeIgniter\Model->__call('dados_equipa_se...', Array)
+#1 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#2 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#3 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-24 10:29:36 --> Undefined variable $jogos
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 205)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(64): view('Pages/escaloes/...', Array)
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 10:30:44 --> Undefined variable $jogos
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(205): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 205)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(64): view('Pages/escaloes/...', Array)
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 10:32:17 --> Undefined variable $jogadores
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 244)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(65): view('Pages/escaloes/...', Array)
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-24 10:34:21 --> Undefined variable $jogadores
+#0 C:\xampp\htdocs\Pap\app\Views\Pages\escaloes\seniores.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 244)
+#1 C:\xampp\htdocs\Pap\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Pap\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Pap\system\Common.php(1089): CodeIgniter\View\View->render('Pages/escaloes/...', Array, true)
+#4 C:\xampp\htdocs\Pap\app\Controllers\Main.php(65): view('Pages/escaloes/...', Array)
+#5 C:\xampp\htdocs\Pap\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\xampp\htdocs\Pap\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\xampp\htdocs\Pap\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Pap\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Pap\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

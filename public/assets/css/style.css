@@ -1,0 +1,34 @@
+body{
+    font-family:  'Roboto', sans-serif;
+    background-image: url("../../Img/fundo.jpg");
+    position:relative;
+    min-height: 700px;
+    width: 100%;
+
+    /*parallax*/
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.submenu-group{
+    background-color: black;
+}
+
+/*------------------------------- Cards -------------------------------------------*/
+
+/*------------------------------- Icons Redes Sociais -------------------------------------------*/
+.icon-facebook{
+    color:#3b5998;
+}
+.icon-facebook:hover{
+    color: #3b5998;
+}
+.icon-instagram{
+    color:#E1306C;
+ }
+.icon-instagram:hover{
+   color:#E1306C;
+}
