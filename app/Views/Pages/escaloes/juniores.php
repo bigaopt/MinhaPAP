@@ -22,7 +22,7 @@
                             <div class="card-body">
                                 <h4>Juniores</h4>
                                 <h5>Plantel 2021/2022</h5>
-                                <img src="Img/juniores/foto_seniores.jpg" width="100%">
+                                <img src="Img/juniores/equipa.jpg" width="100%">
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active pt-3" id="home" role="tabpanel" aria-labelledby="equipa-tab">
                                         <div class="table-responsive ">
