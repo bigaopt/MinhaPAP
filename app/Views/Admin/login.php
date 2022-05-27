@@ -32,7 +32,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h1 class="title">LOGIN</h1>                
-                    <form action="<?php echo base_url('AdminController/logar'); ?>" method="POST">
+                    <form action="<?php echo base_url('Users/login'); ?>" method="POST">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -50,7 +50,9 @@
                         <div class="p-t-15 ">
                             <button class="btn btn--radius-2 btn--blue">LOGIN</button>
                         </div>
-                        <a href="registo">Criar conta</a>
+                        <p><a href="registo">Criar conta</a></p><br>    
+                        <p><a href="/inicio">voltar Menu</a></p>
+                        
                     </form>
                     <?php $msg = session()->getFlashData('msg') ?>
                     <?php if(!empty($msg)) : ?>

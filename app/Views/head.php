@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="shortcut icon" href="Img/icon-gdm.png" type="image/png">
+
 </head>
 
 <body>

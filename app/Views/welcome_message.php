@@ -221,7 +221,7 @@
 
 		<h1>Welcome to CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?> <?php echo session()->nome ?></h1>
 
-		<h2>Clique <?php echo anchor('signOut', 'aqui') ?>  para sair</h2>
+		<h2>Clique <?php echo anchor('logout', 'aqui') ?>  para sair</h2>
 
 	</div>
 	<?php

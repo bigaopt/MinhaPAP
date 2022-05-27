@@ -31,8 +31,8 @@
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <h1 class="title">LOGIN</h1>                
-                    <form action="<?php echo base_url('AdminController/registar'); ?>" method="POST">
+                    <h1 class="title">Sign up</h1>                
+                    <form action="<?php echo base_url('Users/signup'); ?>" method="POST">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <div class="p-t-15 ">
-                            <button class="btn btn--radius-2 btn--blue">Registar</button>
+                            <button class="btn btn--radius-2 btn--blue">Sign up</button>
                         </div>
                         <a href="login">Login</a>
                     </form>
