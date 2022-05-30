@@ -6,9 +6,10 @@ clubeApp.home = function () {
         $(".carousel-inner").on("click", function()
          {
             window.location.href = 'http://localhost/ci_template/public/noticias';
-         });     
+         });       
     };
 
+    
 
 
 

@@ -224,7 +224,7 @@
                                     </div>
                                     <div class="tab-pane fade pt-3" id="contact" role="tabpanel" aria-labelledby="jogos-tab">
                                         <div class="table-responsive ">
-                                            <table class="table table-hover table-dark text-center">
+                                            <table class="table table-hover table-dark text-center" id="tabela_jogos">
                                                 <thead>
                                                     <tr>
                                                         <th>Dia</th>

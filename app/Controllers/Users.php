@@ -19,15 +19,12 @@ class Users extends BaseController
         $model = new UserModel(); //instancia o model
  
         $dados_user = $model->procurar_por_username($username); //retorna o array que pode ter algum valor ou nao
+        
 
         if(count($dados_user) > 0 ) 
-        {
-            //comparar a pssword
-            $hashUser = $dados_user['password'];
+        {    
 
-            $pass = var_dump($hashUser);//descodifica a password
-
-            if($pass = $password) //verifica se pass da base de dados é igual ao que o utilizador escreveu
+            if(password_verify($password, $dados_user['password'])) //verifica se pass da base de dados é igual ao que o utilizador escreveu
             {
                 session()->set('logado', true);
                 session()->set('username', $username);
@@ -75,7 +72,7 @@ class Users extends BaseController
             'username' => $username,
             'email' => $email,
             'password' => password_hash($password, PASSWORD_DEFAULT)
-            
+
         ];
         
         (new UserModel())->insert($dados);
