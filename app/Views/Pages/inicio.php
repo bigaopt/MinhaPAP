@@ -1,38 +1,4 @@
-<?php
-if ((bool)session()->logado != true) 
-{
-    
-} 
-else 
-{
-?>
-    <div class="menu-admin">
-        <div class="dropdown" id="conta-admin">
-            <a href="#" class="user-dropdown d-flex dropend" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="avatar avatar-md2">
-                    <i class="bi bi-person-fill"></i>
-                </div>
-                <div class="text">
-                    <h6 class="user-dropdown-name"> <?php echo session()->username ?> </h6>
-                    <h5 class="user-dropdown-status text-sm text-muted">Admin</h5>
-                </div>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Pagina só para admin</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="logout">Logout</a></li>
-            </ul>
-        </div>
-    </div>
-<?php
-}
-?>
+
 <div class="content-wrapper container">
     <div class="page-content">
         <section class="row">

@@ -219,6 +219,21 @@
                                                     <p>Mike Pinto</p>
                                                 </div>
                                             </div>
+                                            <div class="row">
+                                                <div class="col-3 text-center">
+                                                    <img src="Img/seniores/Filipe_Santos_diretor.png" width="100%" >
+                                                    <p>Filipe Santos</p>
+                                                </div>
+                                                <div class="col-3 text-center">
+                                                    
+                                                </div>
+                                                <div class="col-3 text-center">
+                                                    
+                                                </div>
+                                                <div class="col-3 text-center">
+                                                    
+                                                </div>
+                                            </div>
                                         </div> 
 
                                     </div>

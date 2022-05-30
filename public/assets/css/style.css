@@ -18,7 +18,13 @@ body{
 }
 
 /*------------------------------- Cards -------------------------------------------*/
+.placar-jogador{
+    margin-left: 5em;
+}
 
+.placares{
+    margin-left: 3em;
+}
 /*------------------------------- Icons Redes Sociais -------------------------------------------*/
 .icon-facebook{
     color:#3b5998;

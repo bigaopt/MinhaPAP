@@ -50,8 +50,7 @@
             </div>
             <nav class="main-navbar">
                 <div class="container">
-                    <ul class="navbar mx-auto">
-
+                    <ul class="navbar mx-auto justify-content-around">
                         <li class="menu-item  ">
                             <a href="inicio" class='menu-link'>
                                 <i class="bi bi-house-fill"></i>
@@ -59,17 +58,10 @@
                             </a>
                         </li>
 
-                        <li class="menu-item  ">
-                            <a href="clube" class='menu-link'>
-                                <i class="bi bi-shield-fill"></i>
-                                <span>Clube</span>
-                            </a>
-                        </li>
-
                         <li class="menu-item active has-sub">
                             <a href="#" class='menu-link'>
-                                <i class="bi bi-bar-chart-steps"></i>
-                                <span>Escalões</span>
+                            <i class="bi bi-person"></i>
+                                <span>Jogadores</span>
                             </a>
                             <div class="submenu ">
                                 <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
@@ -79,32 +71,53 @@
                                     <ul class="submenu-group">
 
                                         <li class="submenu-item  ">
-                                            <a href="seniores" class='submenu-link'>Séniores</a>
+                                            <a href="/inserir_jogador" class='submenu-link'>Inserir Jogador</a>
                                         </li>
 
                                         <li class="submenu-item  ">
-                                            <a href="juniores" class='submenu-link'>Juniores</a>
+                                            <a href="#" class='submenu-link'>Atualizar dados do Jogador</a>
+                                        </li>
+
+                                        <li class="submenu-item  ">
+                                            <a href="#" class='submenu-link'>Deletar Jogador</a>
+                                        </li>
+
+                                        <li class="submenu-item  ">
+                                            <a href="#" class='submenu-link'>Associar Jogador a uma Equipa</a>
                                         </li>
                                 </div>
                             </div>
                         </li>
 
-                        <li class="menu-item  ">
-                            <a href="noticias" class='menu-link'>
-                                <i class="bi bi-newspaper"></i>
-                                <span>Notícias</span>
+
+                        <li class="menu-item active has-sub">
+                            <a href="#" class='menu-link'>
+                                <i class="bi bi-person"></i>
+                                <span>Tecnicos</span>
                             </a>
+                            <div class="submenu ">
+                                <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                                <div class="submenu-group-wrapper">
+                                    <ul class="submenu-group">
+
+                                        <li class="submenu-item  ">
+                                            <a href="#" class='submenu-link'>Inserir Tecnico</a>
+                                        </li>
+
+                                        <li class="submenu-item  ">
+                                            <a href="#" class='submenu-link'>Atualizar dados do Tecnico</a>
+                                        </li>
+
+                                        <li class="submenu-item  ">
+                                            <a href="#" class='submenu-link'>Deletar tecnico</a>
+                                        </li>
+
+                                        <li class="submenu-item  ">
+                                            <a href="#" class='submenu-link'>Associar Tecnico a uma Equipa</a>
+                                        </li>
+                                </div>
+                            </div>
                         </li>
-
-                        <li class="menu-item  ">
-                            <a href="loja" class='menu-link'>
-                                <i class="bi bi-shop-window"></i>
-                                <span>Loja</span>
-                            </a>
-                        </li>
-
-
-
                     </ul>
                 </div>
             </nav>

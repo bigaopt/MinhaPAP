@@ -39,11 +39,14 @@ $routes->get('/loja', 'Main::loja');
 $routes->get('/seniores', 'Main::seniores');
 $routes->get('/juniores', 'Main::juniores');
 
-$routes->get('/admin', 'Users::index');//pagina login
-$routes->get('/login', 'Users::index');//pagina login
-$routes->get('/registo','Users::index_registo');//pagina registo
-$routes->get('/entrou', 'Users::logado');//pagina depois de tar logado
-$routes->get('/logout', 'Users::logout');//pagina para dar logout
+
+$routes->get('/login', 'Users::index'); //pagina login
+$routes->get('/registo','Users::index_registo'); //pagina registo
+$routes->get('/entrou', 'Users::logado'); //pagina depois de tar logado
+$routes->get('/logout', 'Users::logout'); //pagina para dar logout
+
+$routes->get('/admin', 'Admin::index'); //pagina menu admin
+$routes->get('/inserir_jogador','Admin::inserir_jogador'); //pagina inserir jogador
 
 /*
  * --------------------------------------------------------------------

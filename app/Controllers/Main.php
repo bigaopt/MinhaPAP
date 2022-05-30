@@ -4,11 +4,6 @@ namespace App\Controllers;
 
 class Main extends BaseController
 {
-    public function __construct()
-    {
-        helper('url');
-    }
-
     public function index()
     {
         $jogos = new \App\Models\Jogos();
