@@ -46,7 +46,9 @@ $routes->get('/entrou', 'Users::logado'); //pagina depois de tar logado
 $routes->get('/logout', 'Users::logout'); //pagina para dar logout
 
 $routes->get('/admin', 'Admin::index'); //pagina menu admin
-$routes->get('/inserir_jogador','Admin::inserir_jogador'); //pagina inserir jogador
+$routes->get('/inserir_jogador','Admin::pagina_inserir_jogador'); //pagina inserir jogador
+$routes->get('/atualizar_jogadores','Admin::pagina_atualizar_dados_jogadores'); //pagina inserir jogadores
+$routes->get('/apagar_jogadores','Admin::pagina_apagar_jogadores'); //pagina apagar jogadores
 
 /*
  * --------------------------------------------------------------------

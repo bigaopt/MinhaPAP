@@ -3,16 +3,20 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Inserir Jogador</h4>
+                    <h4 class="card-title">Atualizar Jogador</h4>
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <form class="form" method="POST" action="<?php echo base_url('Admin/inserir_jogadores') ?>">
+                        <form class="form" method="POST" action="<?php echo base_url('Admin/atualizar_dados_jogadores') ?>">
                             <div class="row">
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="nome">Nome</label>
-                                        <input type="text" id="first-name-column" class="form-control" placeholder="First Name" name="nome-column">
+                                        <select class="form-select" name="nome-column">
+                                            <?php foreach($nomes_jogadores as $nome) : ?> 
+                                             <option value="<?= $nome->id_jogador ?>"><?= $nome->nome_jogador ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
@@ -62,7 +66,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button type="submit" class="btn btn-primary me-1 mb-1" style="background-color:red" >Inserir</button>
+                                    <button type="submit" class="btn btn-primary me-1 mb-1" style="background-color:red" >Atualizar</button>
                                     <button type="reset" class="btn btn-light-secondary me-1 mb-1" style="background-color:white" >Reset</button>
                                 </div>
                             </div>

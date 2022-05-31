@@ -42,7 +42,7 @@
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
-                                <div class="input-group">
+                                <div class="from-group">
                                     <input class="input--style-4" type="password" name="inputPassword" placeholder="Password">
                                 </div>
                             </div>

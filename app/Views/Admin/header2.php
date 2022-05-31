@@ -26,7 +26,7 @@
                                     </div>
                                     <div class="text">
                                         <h6 class="user-dropdown-name" style="color:black"> <?php echo session()->username ?> </h6>
-                                        <h5 class="user-dropdown-status text-sm text-muted">Admin</h5>
+                                        <h5 class="user-dropdown-status text-sm text-muted" >Admin</h5>
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton1">
@@ -75,11 +75,11 @@
                                         </li>
 
                                         <li class="submenu-item  ">
-                                            <a href="#" class='submenu-link'>Atualizar dados do Jogador</a>
+                                            <a href="/atualizar_jogadores" class='submenu-link'>Atualizar dados do Jogador</a>
                                         </li>
 
                                         <li class="submenu-item  ">
-                                            <a href="#" class='submenu-link'>Deletar Jogador</a>
+                                            <a href="/apagar_jogadores" class='submenu-link'>Deletar Jogador</a>
                                         </li>
 
                                         <li class="submenu-item  ">
