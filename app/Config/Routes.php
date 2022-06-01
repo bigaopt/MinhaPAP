@@ -49,6 +49,9 @@ $routes->get('/admin', 'Admin::index'); //pagina menu admin
 $routes->get('/inserir_jogador','Admin::pagina_inserir_jogador'); //pagina inserir jogador
 $routes->get('/atualizar_jogadores','Admin::pagina_atualizar_dados_jogadores'); //pagina inserir jogadores
 $routes->get('/apagar_jogadores','Admin::pagina_apagar_jogadores'); //pagina apagar jogadores
+$routes->get('/associar_jogadores','Admin::pagina_associar_jogadores'); //pagina associar jogadores a uma equipa
+$routes->get('/inserir_tecnico','Admin::pagina_inserir_tecnico'); //pagina inserir tecnico
+$routes->get('/atualizar_tecnico','Admin::pagina_atualizar_tecnico'); //pagina atualizar tecnico
 
 /*
  * --------------------------------------------------------------------

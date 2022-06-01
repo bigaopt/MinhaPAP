@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Links  css multiplo select-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <!-- Links  css multiplo select-->
+
     <link rel="shortcut icon" href="Img/icon-gdm.png" type="image/png">
 
 </head>

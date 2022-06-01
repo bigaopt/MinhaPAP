@@ -114,4 +114,14 @@ class Equipas extends Model
         
         return $query->getResult();
     }
+
+
+    public function buscar_nomes_equipas()
+    {
+        $db = db_connect();
+
+        $query = $db->query("select id_equipa, nome_equipa from equipas");
+
+        return $query->getResult();
+    }
 }

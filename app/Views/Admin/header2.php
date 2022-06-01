@@ -83,7 +83,7 @@
                                         </li>
 
                                         <li class="submenu-item  ">
-                                            <a href="#" class='submenu-link'>Associar Jogador a uma Equipa</a>
+                                            <a href="/associar_jogadores" class='submenu-link'>Associar Jogador a uma Equipa</a>
                                         </li>
                                 </div>
                             </div>
@@ -101,11 +101,11 @@
                                     <ul class="submenu-group">
 
                                         <li class="submenu-item  ">
-                                            <a href="#" class='submenu-link'>Inserir Tecnico</a>
+                                            <a href="/inserir_tecnico" class='submenu-link'>Inserir Tecnico</a>
                                         </li>
 
                                         <li class="submenu-item  ">
-                                            <a href="#" class='submenu-link'>Atualizar dados do Tecnico</a>
+                                            <a href="/atualizar_tecnico" class='submenu-link'>Atualizar dados do Tecnico</a>
                                         </li>
 
                                         <li class="submenu-item  ">

@@ -10,7 +10,7 @@
                     <a href="/inserir_jogador" class="btn btn-danger rounded-pill">Inserir jogador</a><br>
                     <a href="/atualizar_jogadores" class="btn btn-danger rounded-pill">Atualizar dados de um jogador</a><br>
                     <a href="/apagar_jogadores" class="btn btn-danger rounded-pill">Apagar dados de um jogador</a><br>
-                    <a href="#" class="btn btn-danger rounded-pill">Associar um jogador a uma equipa</a>
+                    <a href="/associar_jogadores" class="btn btn-danger rounded-pill">Associar um jogador a uma equipa</a>
                 </div>
             </div>
         </div>
@@ -23,8 +23,8 @@
             </div>
             <div class="card-body ">
                 <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                    <a href="#" class="btn btn-danger rounded-pill">Inserir técnico</a><br>
-                    <a href="#" class="btn btn-danger rounded-pill">Atualizar dados de um técnico</a><br>
+                    <a href="/inserir_tecnico" class="btn btn-danger rounded-pill">Inserir técnico</a><br>
+                    <a href="/atualizar_tecnico" class="btn btn-danger rounded-pill">Atualizar dados de um técnico</a><br>
                     <a href="#" class="btn btn-danger rounded-pill">Apagar dados de um técnico</a><br>
                     <a href="#" class="btn btn-danger rounded-pill">Associar um técnico a uma equipa</a>
                 </div>
