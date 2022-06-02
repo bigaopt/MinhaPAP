@@ -34,10 +34,6 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
                                     <li><a class="dropdown-item" href="logout">Logout</a></li>
                                 </ul>
                             </div>
@@ -85,6 +81,9 @@
                                         <li class="submenu-item  ">
                                             <a href="/associar_jogadores" class='submenu-link'>Associar Jogador a uma Equipa</a>
                                         </li>
+                                        <li class="submenu-item  ">
+                                            <a href="/tabela_jogadores" class="submenu-link">Tabela dos Jogadores</a>
+                                        </li>
                                 </div>
                             </div>
                         </li>
@@ -109,11 +108,14 @@
                                         </li>
 
                                         <li class="submenu-item  ">
-                                            <a href="#" class='submenu-link'>Deletar tecnico</a>
+                                            <a href="/apagar_tecnico" class='submenu-link'>Deletar tecnico</a>
                                         </li>
 
                                         <li class="submenu-item  ">
-                                            <a href="#" class='submenu-link'>Associar Tecnico a uma Equipa</a>
+                                            <a href="/associar_tecnico" class='submenu-link'>Associar Tecnico a uma Equipa</a>
+                                        </li>
+                                        <li class="submenu-item  ">
+                                            <a href="/tabela_tecnicos" class="submenu-link">Tabela dos Tecnicos</a>
                                         </li>
                                 </div>
                             </div>

@@ -49,11 +49,9 @@
                         </div>
                         <div class="p-t-15 ">
                             <button class="btn btn--radius-2 btn--blue">LOGIN</button>
-                        </div>
-                        <p><a href="registo">Criar conta</a></p><br>    
-                        <p><a href="/inicio">voltar Menu</a></p>
-                        
-                    </form>
+                        </div> 
+                        <a href="/inicio" class="button-admin" >voltar Menu</a>
+                    </form>                
                     <?php $msg = session()->getFlashData('msg') ?>
                     <?php if(!empty($msg)) : ?>
                         <div class="alert alert-danger">

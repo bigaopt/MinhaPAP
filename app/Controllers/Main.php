@@ -104,4 +104,6 @@ class Main extends BaseController
         echo view('footer');
     }
 
+   
+
 }

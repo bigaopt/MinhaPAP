@@ -175,8 +175,7 @@ class Admin extends BaseController
         $id_jogador = $this->request->getPost('nome-column');
         $id_equipa = $this->request->getPost('equipa-column');
 
-        dd($id_jogador,$id_equipa);
-
+        
         $dados_jogador = [
             'id_jogador' => $id_jogador,
             'id_equipa' => $id_equipa
@@ -198,8 +197,7 @@ class Admin extends BaseController
         {    
             $model = new Tecnicos();
 
-            $cargos = $model->buscar_cargos();
-
+            $cargos = $model->buscar_nome_tecnico();
 
             
             echo view('head');
@@ -284,5 +282,114 @@ class Admin extends BaseController
         $db->table('tecnicos')->where('id_tecnico', $id)->update($dados_jogador);
 
         return redirect()->to(base_url('/admin'));
+    }
+
+    public function pagina_apagar_tecnico()
+    {
+        if ((bool)session()->logado != true) 
+        {
+            return redirect()->to(base_url('/login'));
+        } 
+        else 
+        {      
+            $model = new Tecnicos();
+
+            $nome_tecnicos = $model->buscar_nome_tecnico();
+
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/apagar_tecnico',['nome_tecnicos' => $nome_tecnicos]);
+            echo view('footer');
+        }  
+    }
+
+    public function apagar_tecnico()
+    {
+        $id = $this->request->getPost('nome-column');
+
+        $db = db_connect();
+        $db->table('tecnicos')->where('id_tecnico', $id)->delete();
+
+        return redirect()->to(base_url('/admin'));
+    }
+
+    public function pagina_associar_tecnico() 
+    {
+        if ((bool)session()->logado != true) 
+        {
+            return redirect()->to(base_url('/login'));
+        } 
+        else 
+        {
+            $model = new Tecnicos();
+
+            $model_equipa = new Equipas();
+
+            $nomes_tecnicos = $model->buscar_nome_tecnico();
+
+            $nome_equipas = $model_equipa->buscar_nomes_equipas();
+                       
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/associar_tecnicos',['nomes_tecnicos' => $nomes_tecnicos,'nomes_equipas' => $nome_equipas]);
+            echo view('footer');
+        } 
+    }
+
+    public function associar_tecnicos()
+    {
+        $id_tecnico = $this->request->getPost('nome-column');
+        $id_equipa = $this->request->getPost('equipa-column');
+
+        
+
+        $dados_jogador = [
+            'id_jogador' => $id_tecnico,
+            'id_equipa' => $id_equipa
+        ];
+
+        $db = db_connect();
+        $db->table('tecnicos_equipa')->insert($dados_jogador); 
+
+        return redirect()->to(base_url('/admin'));
+    }
+
+    public function pagina_tabela_jogadores()
+    {
+        if ((bool)session()->logado != true) 
+        {
+            return redirect()->to(base_url('/login'));
+        } 
+        else 
+        {
+            $model = new Jogadores();
+
+            $jogadores = $model->mostrar_todos_jogadores();
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/tabela_jogadores',['jogadores' => $jogadores]);
+            echo view('footer');
+        } 
+    }
+
+    public function pagina_tabela_tecnicos()
+    {
+        if ((bool)session()->logado != true) 
+        {
+            return redirect()->to(base_url('/login'));
+        } 
+        else 
+        {
+            $model = new Tecnicos();
+
+            $tecnicos = $model->buscar_todo_tecnicos();
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/tabela_tecnicos',['tecnicos' => $tecnicos]);
+            echo view('footer');
+        } 
     }
 }

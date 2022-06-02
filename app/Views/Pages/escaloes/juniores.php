@@ -1,7 +1,7 @@
 <div class="content-wrapper container">
     <div class="page-content">
         <section class="row">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 ">
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -150,7 +150,7 @@
                                                     <p>Marco Bastos</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="pereira">
-                                                    <img src="Img/juniores/Marco Pereira junior.png" width="100%" >
+                                                    <img src="Img/juniores/Marco Pereira junior.png" width="100%">
                                                     <p>Marco Pereira</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="renato">
@@ -166,7 +166,7 @@
 
                                         <hr>
 
-                                       <div class="row">
+                                        <div class="row">
                                             <h5>Tecnicos</h5>
                                             <div class="row">
                                                 <div class="col-3 text-center">
@@ -174,7 +174,7 @@
                                                     <p>Helder Sousa</p>
                                                 </div>
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/juniores/Treinador Eduardo juniores.PNG" width="100%"  height="70%">
+                                                    <img src="Img/juniores/Treinador Eduardo juniores.PNG" width="100%" height="70%">
                                                     <p>Eduardo Sousa</p>
                                                 </div>
                                                 <div class="col-3 text-center">
@@ -184,7 +184,7 @@
                                                 <div class="col-3 text-center">
                                                 </div>
                                             </div>
-                                        </div> 
+                                        </div>
 
                                     </div>
                                     <div class="tab-pane fade pt-3" id="contact" role="tabpanel" aria-labelledby="jogos-tab">
@@ -223,8 +223,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-5">
-                
+
+        </section>
+        <section class="row">
+            <div class="col-12">
+
                 <div class="card">
 
                     <div class="card-header">
@@ -243,7 +246,7 @@
                                 </thead>
                                 <tbody>
                                     <?php foreach ($jogadores as $jogador) : ?>
-                                        <tr class="table-light"> 
+                                        <tr class="table-light">
                                             <td><?= $jogador->nome_jogador; ?></td>
                                             <td><?= $jogador->data_nascimento; ?></td>
                                             <td><?= $jogador->genero; ?></td>

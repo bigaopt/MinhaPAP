@@ -18,4 +18,13 @@ class Tecnicos extends Model
 
         return $query->getResult();
     }
+
+    public function buscar_todo_tecnicos()
+    {
+        $db = db_connect();
+
+        $query = $db->query('select e.nome_equipa ,t.* from tecnicos t , equipas e , tecnicos_equipa te where t.id_tecnico = te.id_tecnico and te.id_equipa = e.id_equipa');
+
+        return $query->getResult();
+    }
 }

@@ -36,4 +36,12 @@ class Jogadores extends Model
 
         return $query->getResult();
     }
+
+    public function mostrar_todos_jogadores()
+    {
+        $db = db_connect();
+        $query = $db->query('select j.*,e.nome_equipa from jogadores j, jogadores_equipa je, equipas e where j.id_jogador = je.id_jogador and je.id_equipa = e.id_equipa');
+
+        return $query->getResult();
+    }
 }

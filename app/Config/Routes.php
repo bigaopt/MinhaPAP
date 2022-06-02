@@ -52,6 +52,10 @@ $routes->get('/apagar_jogadores','Admin::pagina_apagar_jogadores'); //pagina apa
 $routes->get('/associar_jogadores','Admin::pagina_associar_jogadores'); //pagina associar jogadores a uma equipa
 $routes->get('/inserir_tecnico','Admin::pagina_inserir_tecnico'); //pagina inserir tecnico
 $routes->get('/atualizar_tecnico','Admin::pagina_atualizar_tecnico'); //pagina atualizar tecnico
+$routes->get('/apagar_tecnico','Admin::pagina_apagar_tecnico'); //pagina apagar tecnico
+$routes->get('/associar_tecnico','Admin::pagina_associar_tecnico'); //pagina associar tecnico a uma equipa
+$routes->get('/tabela_jogadores','Admin::pagina_tabela_jogadores'); //pagina tabela jogadores
+$routes->get('/tabela_tecnicos','Admin::pagina_tabela_tecnicos'); //pagina tabela tecnicos
 
 /*
  * --------------------------------------------------------------------
