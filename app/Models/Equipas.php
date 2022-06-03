@@ -103,15 +103,12 @@ class Equipas extends Model
     }
 
 
-    public function mostrar_todas_equipas()
+    public function buscar_todas_equipas()
     {
 
-        $builder = $this->db->table("equipas");
+        $db = db_connect();
+        $query = $db->query("select* from equipas");
 
-        $builder->select('nome_equipa , nome_escalao , pontos , classificacao');
-        $builder->orderBy('classificacao','desc');
-        $query = $builder->get();
-        
         return $query->getResult();
     }
 

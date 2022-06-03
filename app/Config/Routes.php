@@ -45,7 +45,7 @@ $routes->get('/registo','Users::index_registo'); //pagina registo
 $routes->get('/entrou', 'Users::logado'); //pagina depois de tar logado
 $routes->get('/logout', 'Users::logout'); //pagina para dar logout
 
-$routes->get('/admin', 'Admin::index'); //pagina menu admin
+$routes->get('/admin', 'Admin::pagina_tabela_jogadores'); //pagina menu admin
 $routes->get('/inserir_jogador','Admin::pagina_inserir_jogador'); //pagina inserir jogador
 $routes->get('/atualizar_jogadores','Admin::pagina_atualizar_dados_jogadores'); //pagina inserir jogadores
 $routes->get('/apagar_jogadores','Admin::pagina_apagar_jogadores'); //pagina apagar jogadores
@@ -56,7 +56,7 @@ $routes->get('/apagar_tecnico','Admin::pagina_apagar_tecnico'); //pagina apagar 
 $routes->get('/associar_tecnico','Admin::pagina_associar_tecnico'); //pagina associar tecnico a uma equipa
 $routes->get('/tabela_jogadores','Admin::pagina_tabela_jogadores'); //pagina tabela jogadores
 $routes->get('/tabela_tecnicos','Admin::pagina_tabela_tecnicos'); //pagina tabela tecnicos
-
+$routes->get('/tabela_equipas','Admin::pagina_tabela_equipas'); //pagina tabela equipas
 /*
  * --------------------------------------------------------------------
  * Additional Routing

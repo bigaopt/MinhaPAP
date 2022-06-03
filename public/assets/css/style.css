@@ -26,6 +26,14 @@ body{
     margin-left: 5em;
 }
 
+/*------------------------------- inputs -------------------------------------------*/
+label {
+    color:black;
+}
+
+.nav-item > a{
+    color:black;
+}
 /*------------------------------- Icons Redes Sociais -------------------------------------------*/
 .icon-facebook{
     color:#3b5998;

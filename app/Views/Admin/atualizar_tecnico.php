@@ -22,13 +22,13 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="cc">Cartão Cidadao</label>
-                                        <input type="text" id="last-name-column" class="form-control" placeholder="Last Name" name="cc-column" maxlength="9">
+                                        <input type="text" id="last-name-column" class="form-control" placeholder="Cartão de Cidadão" name="cc-column" maxlength="9">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="data_nascimento">Data de nascimento</label>
-                                        <input type="date" id="city-column" class="form-control" placeholder="City" name="data-column">
+                                        <input type="date" id="city-column" class="form-control" placeholder="Data" name="data-column">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
@@ -43,31 +43,32 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="nacionalidade">Nacionalidade</label>
-                                        <input type="text" id="country-floating" class="form-control" name="nacionalidade-column" placeholder="Country">
+                                        <input type="text" id="country-floating" class="form-control" name="nacionalidade-column" placeholder="Nacionalidade">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="morada">Morada</label>
-                                        <input type="text" id="company-column" class="form-control" name="morada-column" placeholder="Company">
+                                        <input type="text" id="company-column" class="form-control" name="morada-column" placeholder="Morada">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="codigo-postal">Código Postal</label>
-                                        <input type="text" id="email-id-column" class="form-control" name="CodPostal-column" placeholder="Email" required pattern="\d{4}-\d{3}" />
+                                        <input type="text" id="email-id-column" class="form-control" name="CodPostal-column" placeholder="Código Postal" required pattern="\d{4}-\d{3}" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="telemovel">Telemóvel</label>
-                                        <input type="text" id="company-column" class="form-control" name="telemovel-column" placeholder="Company" maxlength="9">
+                                        <input type="text" id="company-column" class="form-control" name="telemovel-column" placeholder="Telemóvel" maxlength="9">
                                     </div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button type="submit" class="btn btn-primary me-1 mb-1" style="background-color:red" >Atualizar</button>
-                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1" style="background-color:white" >Reset</button>
+                                    <button type="submit" class="btn btn-danger me-1 mb-1" >Atualizar técnico</button>
+                                    <button type="reset" class="btn btn-dark me-1 mb-1" > Limpar campos</button>
+                                    <a href="/tabela_tecnicos" ><button type="button" class="btn btn-danger">Voltar à tabela</button></a>
                                 </div>
                             </div>
                         </form>

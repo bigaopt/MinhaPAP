@@ -81,8 +81,6 @@ class Admin extends BaseController
             $model = new Jogadores();
 
             $nomes_jogadores = $model->buscar_nomes_jogadores();
-
-            $model_equipa = new Equipas();
                        
             echo view('head');
             echo view('Admin/header2');
@@ -142,7 +140,8 @@ class Admin extends BaseController
         $id = $this->request->getPost('nome-column');
 
         $db = db_connect();
-        $db->table('jogadores')->where('id_jogador', $id)->delete();
+        
+        $db->table('jogadores')->set('estado','0')->where('id_jogador', $id)->update();
 
         return redirect()->to(base_url('/admin'));
     }
@@ -234,7 +233,7 @@ class Admin extends BaseController
         $db = db_connect();
         $db->table('tecnicos')->insert($dados_tecnico);
 
-        return redirect()->to(base_url('/admin'));
+        return redirect()->to(base_url('/tabela_tecnicos'));
     }
 
     public function pagina_atualizar_tecnico()
@@ -254,6 +253,7 @@ class Admin extends BaseController
             echo view('Admin/header2');
             echo view('admin/atualizar_tecnico',['nome_tecnicos' => $nome_tecnicos]);
             echo view('footer');
+            
         }  
     }
 
@@ -281,7 +281,7 @@ class Admin extends BaseController
         $db = db_connect();
         $db->table('tecnicos')->where('id_tecnico', $id)->update($dados_jogador);
 
-        return redirect()->to(base_url('/admin'));
+        return redirect()->to(base_url('/tabela_tecnicos'));
     }
 
     public function pagina_apagar_tecnico()
@@ -309,9 +309,10 @@ class Admin extends BaseController
         $id = $this->request->getPost('nome-column');
 
         $db = db_connect();
-        $db->table('tecnicos')->where('id_tecnico', $id)->delete();
 
-        return redirect()->to(base_url('/admin'));
+        $db->table('tecnicos')->set('estado','0')->where('id_tecnico', $id)->update();
+
+        return redirect()->to(base_url('/tabela_tecnicos'));
     }
 
     public function pagina_associar_tecnico() 
@@ -352,7 +353,7 @@ class Admin extends BaseController
         $db = db_connect();
         $db->table('tecnicos_equipa')->insert($dados_jogador); 
 
-        return redirect()->to(base_url('/admin'));
+        return redirect()->to(base_url('/tabela_tecnicos'));
     }
 
     public function pagina_tabela_jogadores()
@@ -392,4 +393,26 @@ class Admin extends BaseController
             echo view('footer');
         } 
     }
+
+    public function pagina_tabela_equipas() 
+    {
+        if ((bool)session()->logado != true) 
+        {
+            return redirect()->to(base_url('/login'));
+        } 
+        else 
+        {
+            $model = new Equipas();
+
+            $equipas = $model->buscar_todas_equipas();
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/tabela_equipas',['equipas' => $equipas]);
+            echo view('footer');
+        } 
+    }
 }
+
+
+

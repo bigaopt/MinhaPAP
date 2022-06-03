@@ -32,8 +32,8 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-12 d-flex justify-content-end">
-                                    <button type="submit" class="btn btn-primary me-1 mb-1" style="background-color:red">Associar</button>
-                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                    <button type="submit" class="btn btn-danger me-1 mb-1">Associar técnico</button>
+                                    <a href="/tabela_tecnicos" ><button type="button" class="btn btn-danger">Voltar à tabela</button></a>
                                 </div>
                             </div>
                         </form>

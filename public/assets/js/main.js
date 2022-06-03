@@ -10,10 +10,6 @@ clubeApp.home = function () {
     };
 
     
-
-
-
-
     return {
         init: init,
     }

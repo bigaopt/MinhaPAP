@@ -226,9 +226,9 @@
 
         </section>
         <section class="row">
-            <div class="col-12">
+            <div class="col-10" >
 
-                <div class="card">
+                <div class="card" style="left:6em;">
 
                     <div class="card-header">
                         <h4>Jogadores</h4>

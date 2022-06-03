@@ -54,71 +54,26 @@
                             </a>
                         </li>
 
-                        <li class="menu-item active has-sub">
-                            <a href="#" class='menu-link'>
+                        <li class="menu-item active ">
+                            <a href="/tabela_jogadores" class='menu-link'>
                             <i class="bi bi-person"></i>
                                 <span>Jogadores</span>
                             </a>
-                            <div class="submenu ">
-                                <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
-                                <div class="submenu-group-wrapper">
-
-
-                                    <ul class="submenu-group">
-
-                                        <li class="submenu-item  ">
-                                            <a href="/inserir_jogador" class='submenu-link'>Inserir Jogador</a>
-                                        </li>
-
-                                        <li class="submenu-item  ">
-                                            <a href="/atualizar_jogadores" class='submenu-link'>Atualizar dados do Jogador</a>
-                                        </li>
-
-                                        <li class="submenu-item  ">
-                                            <a href="/apagar_jogadores" class='submenu-link'>Deletar Jogador</a>
-                                        </li>
-
-                                        <li class="submenu-item  ">
-                                            <a href="/associar_jogadores" class='submenu-link'>Associar Jogador a uma Equipa</a>
-                                        </li>
-                                        <li class="submenu-item  ">
-                                            <a href="/tabela_jogadores" class="submenu-link">Tabela dos Jogadores</a>
-                                        </li>
-                                </div>
-                            </div>
                         </li>
 
 
-                        <li class="menu-item active has-sub">
-                            <a href="#" class='menu-link'>
+                        <li class="menu-item active ">
+                            <a href="/tabela_tecnicos" class='menu-link'>
                                 <i class="bi bi-person"></i>
                                 <span>Tecnicos</span>
                             </a>
-                            <div class="submenu ">
-                                <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
-                                <div class="submenu-group-wrapper">
-                                    <ul class="submenu-group">
+                        </li>
 
-                                        <li class="submenu-item  ">
-                                            <a href="/inserir_tecnico" class='submenu-link'>Inserir Tecnico</a>
-                                        </li>
-
-                                        <li class="submenu-item  ">
-                                            <a href="/atualizar_tecnico" class='submenu-link'>Atualizar dados do Tecnico</a>
-                                        </li>
-
-                                        <li class="submenu-item  ">
-                                            <a href="/apagar_tecnico" class='submenu-link'>Deletar tecnico</a>
-                                        </li>
-
-                                        <li class="submenu-item  ">
-                                            <a href="/associar_tecnico" class='submenu-link'>Associar Tecnico a uma Equipa</a>
-                                        </li>
-                                        <li class="submenu-item  ">
-                                            <a href="/tabela_tecnicos" class="submenu-link">Tabela dos Tecnicos</a>
-                                        </li>
-                                </div>
-                            </div>
+                        <li class="menu-item active ">
+                            <a href="/tabela_equipas" class='menu-link'>
+                                <i class="bi bi-person"></i>
+                                <span>Equipas</span>
+                            </a>
                         </li>
                     </ul>
                 </div>

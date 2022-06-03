@@ -1,0 +1,42 @@
+ERROR - 2022-06-03 03:58:53 --> Unknown column 'j.estado' in 'where clause'
+CRITICAL - 2022-06-03 03:58:53 --> Unknown column 'j.estado' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select j.id_jog...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select j.id_jog...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select j.id_jog...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Models\Jogadores.php(26): CodeIgniter\Database\BaseConnection->query('select j.id_jog...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Main.php(61): App\Models\Jogadores->mostrar_jogadores_seniores()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Main->seniores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-03 08:07:10 --> Undefined property: CodeIgniter\View\View::$request
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\atualizar_jogadores.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\Admini...', 70)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/atualizar...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(89): view('admin/atualizar...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_atualizar_dados_jogadores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-03 08:08:13 --> Array callback must have exactly two elements
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/atualizar...', Array, true)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(89): view('admin/atualizar...', Array)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_atualizar_dados_jogadores()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-03 10:29:42 --> syntax error, unexpected token ":"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#4 {main}
