@@ -12,10 +12,8 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="nome">Nome</label>
-                                        <select class="form-select" name="nome-column">
-                                            <?php foreach ($nomes_jogadores as $nome) : ?>
-                                                <option value="<?= $nome->id_jogador ?>"><?= $nome->nome_jogador ?></option>
-                                            <?php endforeach; ?>
+                                        <select class="form-control" name="id-column">
+                                            <option name="<?= $id ?>"><?= $nome ?></option> 
                                         </select>
                                     </div>
                                 </div>

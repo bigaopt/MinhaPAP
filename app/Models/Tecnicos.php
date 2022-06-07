@@ -8,13 +8,22 @@ class Tecnicos extends Model
 {
     protected $table = 'tecnicos';
     protected $primaryKey = 'id_tecnico';
-    protected $AllowFields = ['nome_tecnico', 'cc_tecnico', 'data_nascimento', 'genero', 'nacionalidade', 'morada', 'cod_Postal', 'telefone','cargo'];
+    
+    protected $AllowFields = [  'nome_tecnico',
+                                'cc_tecnico',
+                                'data_nascimento',
+                                'genero', 
+                                'nacionalidade',
+                                'morada',
+                                'cod_Postal',
+                                'telefone',
+                                'cargo'];
 
     public function buscar_nome_tecnico()
     {
         $db = db_connect();
 
-        $query = $db->query('SELECT id_tecnico,nome_tecnico from tecnicos');
+        $query = $db->query('SELECT id_tecnico,nome_tecnico from tecnicos ');
 
         return $query->getResult();
     }
@@ -23,8 +32,8 @@ class Tecnicos extends Model
     {
         $db = db_connect();
 
-        $query = $db->query('select e.nome_equipa ,t.* from tecnicos t , equipas e , tecnicos_equipa te where  t.id_tecnico = te.id_tecnico and te.id_equipa = e.id_equipa');
+        $query = $db->query('select * from tecnicos ');
 
         return $query->getResult();
-    }
+   }
 }

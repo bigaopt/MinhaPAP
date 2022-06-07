@@ -1,7 +1,7 @@
 <div class="content-wrapper container">
     <div class="page-content">
         <section class="row">
-            <div class="col-12 col-lg-7">
+            <div class="col-12">
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -205,24 +205,29 @@
                                                 <div class="col-3 text-center">
                                                     <img src="Img/seniores/Pedro_Silva_treinador_principal.png" width="100%" height="70%">
                                                     <p>Pedro Silva</p>
+                                                    <p>Treinador Principal</p>
                                                 </div>
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/seniores/Andre_Dolores_treinador_adjunto.png" width="100%" >
+                                                    <img src="Img/seniores/Andre_Dolores_treinador_adjunto.png" width="100%" height="70%" >
                                                     <p>Andre Dolores</p>
+                                                    <p>Treinador Adjunto</p>
                                                 </div>
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/seniores/Joel_Cardoso_Treinador_adjunto.png" width="100%"  >
+                                                    <img src="Img/seniores/Joel_Cardoso_Treinador_adjunto.png" width="100%"   height="70%">
                                                     <p>Joel Cardoso</p>
+                                                    <p>Treinador Adjunto</p>
                                                 </div>
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/seniores/Mike_Pinto_Treinador_gr.png" width="100%" >
+                                                    <img src="Img/seniores/Mike_Pinto_Treinador_gr.png" width="100%"  height="70%">
                                                     <p>Mike Pinto</p>
+                                                    <p>Treinador de Gurada Redes</p>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/seniores/Filipe_Santos_diretor.png" width="100%" >
+                                                    <img src="Img/seniores/Filipe_Santos_diretor.png" width="100%"  height="70%">
                                                     <p>Filipe Santos</p>
+                                                    <p>Diretor</p>
                                                 </div>
                                                 <div class="col-3 text-center">
                                                     
@@ -272,9 +277,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="card">
+            </div>            
+        </section>
+        <section>
+        <div class="col-10">
+                <div class="card" style="left:6em;">
 
                     <div class="card-header">
                         <h4>Jogadores</h4>
@@ -293,7 +300,7 @@
                                 <tbody>
                                     <?php foreach ($dados_jogadores as $jogador) : ?>
                                         <tr class="table-light"> 
-                                            <td><?= $jogador->nome_jogador; ?></td>
+                                            <td>"><?= $jogador->nome_jogador; ?></td>
                                             <td><?= $jogador->data_nascimento; ?></td>
                                             <td><?= $jogador->genero; ?></td>
                                             <td><?= $jogador->nacionalidade; ?></td>
@@ -304,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  
         </section>
     </div>
 

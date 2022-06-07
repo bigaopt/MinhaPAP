@@ -12,11 +12,11 @@ class Main extends BaseController
 
         $jogos_recentes = $jogos->mostrar_jogos_mais_recentes(); 
 
-        $equipas = $equipa->mostrar_todas_equipas();
+        
 
         echo view('head');
         echo view('header');
-        echo view('Pages/inicio',['jogos'=>$jogos_recentes,'equipas'=>$equipas]);
+        echo view('Pages/inicio',['jogos'=>$jogos_recentes]);
         echo view('footer');
 
 

@@ -8,12 +8,7 @@ class Equipas extends Model
 {
     protected $table = 'equipas';
     protected $primaryKey = 'id_equipa';
-    protected $returnType = 'array';
-
-    public function __construct()
-    {
-        $this->db = db_connect();
-    }
+    protected $AllowFields = ['nome_equipa','nome_escalao','pontos','vitorias','empates','derrotas','classificacao'];
 
     public function getequipas_juniores()
     {
@@ -118,6 +113,15 @@ class Equipas extends Model
         $db = db_connect();
 
         $query = $db->query("select id_equipa, nome_equipa from equipas");
+
+        return $query->getResult();
+    }
+
+    public function buscar_escaloes()
+    {
+        $db = db_connect();
+
+        $query = $db->query("select nome_escalao from escaloes order by nome_escalao asc");
 
         return $query->getResult();
     }

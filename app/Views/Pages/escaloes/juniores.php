@@ -84,7 +84,7 @@
                                                     <p>Helder Tavares</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="henrique">
-                                                    <img src="Img/juniores/Henrique Cardoso junior.png" width="100%" height="70%">
+                                                    <img src="Img/juniores/Henrique Cardoso junior.png" width="100%" height="80%">
                                                     <p>Henrique Cardoso</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="ze">
@@ -110,7 +110,7 @@
                                                     <p>Micael Paiva</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="talhas">
-                                                    <img src="Img/juniores/Henrique Talhas junior.png" width="100%">
+                                                    <img src="Img/juniores/Henrique Talhas junior.png" width="100%" height="70%">
                                                     <p>Henrique Talhas</p>
                                                 </div>
                                             </div>
@@ -121,21 +121,20 @@
                                         <div class="row">
                                             <h5>Medios</h5>
                                             <div class="row">
-                                                <div class="col-3 text-center" id="david">
-                                                    <img src="Img/juniores/David Santos junior.png" width="100%" height="70%">
-                                                    <p>David Santos</p>
-                                                </div>
                                                 <div class="col-3 text-center" id="lino">
-                                                    <img src="Img/juniores/Gonçalo Lino junior.png" width="100%" height="70%">
+                                                    <img src="Img/juniores/Gonçalo Lino junior.png" width="100%" height="72%">
                                                     <p>Gonçalo Lino</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="carvalho">
-                                                    <img src="Img/juniores/Joao Carvalho junior.png" width="100%">
+                                                    <img src="Img/juniores/Joao Carvalho junior.png" width="100%" height="72%">
                                                     <p>João carvalho</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="avelino">
-                                                    <img src="Img/juniores/Nuno Avelino junior.png" width="100%" height="70%">
+                                                    <img src="Img/juniores/Nuno Avelino junior.png" width="100%">
                                                     <p>Nuno Avelino</p>
+                                                </div>
+                                                <div class="col-3 text-center" id="">
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -146,7 +145,7 @@
                                             <h5>Avançados</h5>
                                             <div class="row">
                                                 <div class="col-3 text-center" id="marco">
-                                                    <img src="Img/juniores/Marco Bastos junior.png" width="100%" height="70%">
+                                                    <img src="Img/juniores/Marco Bastos junior.png" width="100%" height="80%">
                                                     <p>Marco Bastos</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="pereira">
@@ -158,7 +157,7 @@
                                                     <p>Renato Lima</p>
                                                 </div>
                                                 <div class="col-3 text-center" id="moutinho">
-                                                    <img src="Img/juniores/Xavier Moutinho junior.png" width="100%" height="70%">
+                                                    <img src="Img/juniores/Xavier Moutinho junior.png" width="100%" height="80%">
                                                     <p>Xavier Moutinho</p>
                                                 </div>
                                             </div>
@@ -170,15 +169,15 @@
                                             <h5>Tecnicos</h5>
                                             <div class="row">
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/juniores/Treinador Helder juniores.PNG" width="100%">
+                                                    <img src="Img/juniores/Treinador Helder juniores.PNG" width="100%" height="100%" >
                                                     <p>Helder Sousa</p>
                                                 </div>
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/juniores/Treinador Eduardo juniores.PNG" width="100%" height="70%">
+                                                    <img src="Img/juniores/Treinador Eduardo juniores.PNG" width="100%"  >
                                                     <p>Eduardo Sousa</p>
                                                 </div>
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/juniores/Diretor Fernando juniores.PNG" width="100%" height="70%">
+                                                    <img src="Img/juniores/Diretor Fernando juniores.PNG" width="100%" height="85%">
                                                     <p>Fernando Tavares</p>
                                                 </div>
                                                 <div class="col-3 text-center">

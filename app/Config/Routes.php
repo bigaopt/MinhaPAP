@@ -47,16 +47,20 @@ $routes->get('/logout', 'Users::logout'); //pagina para dar logout
 
 $routes->get('/admin', 'Admin::pagina_tabela_jogadores'); //pagina menu admin
 $routes->get('/inserir_jogador','Admin::pagina_inserir_jogador'); //pagina inserir jogador
-$routes->get('/atualizar_jogadores','Admin::pagina_atualizar_dados_jogadores'); //pagina inserir jogadores
-$routes->get('/apagar_jogadores','Admin::pagina_apagar_jogadores'); //pagina apagar jogadores
 $routes->get('/associar_jogadores','Admin::pagina_associar_jogadores'); //pagina associar jogadores a uma equipa
 $routes->get('/inserir_tecnico','Admin::pagina_inserir_tecnico'); //pagina inserir tecnico
-$routes->get('/atualizar_tecnico','Admin::pagina_atualizar_tecnico'); //pagina atualizar tecnico
-$routes->get('/apagar_tecnico','Admin::pagina_apagar_tecnico'); //pagina apagar tecnico
 $routes->get('/associar_tecnico','Admin::pagina_associar_tecnico'); //pagina associar tecnico a uma equipa
 $routes->get('/tabela_jogadores','Admin::pagina_tabela_jogadores'); //pagina tabela jogadores
 $routes->get('/tabela_tecnicos','Admin::pagina_tabela_tecnicos'); //pagina tabela tecnicos
 $routes->get('/tabela_equipas','Admin::pagina_tabela_equipas'); //pagina tabela equipas
+$routes->get('/inserir_equipa','Admin::pagina_inserir_equipa'); //pagina inserir equipa
+
+$routes->get('atualizar_tecnico/(:num)','Admin::pagina_atualizar_tecnico/$1'); //pagina atualizar tecnico
+$routes->get('apagar_tecnico/(:num)','Admin::apagar_tecnico/$1'); //apaga tecnico
+$routes->get('atualizar_jogadores/(:num)','Admin::pagina_atualizar_dados_jogadores/$1'); //pagina atualizar jogadores
+$routes->get('apagar_jogadores/(:num)','Admin::apagar_jogadores/$1'); //pagina apagar jogadores
+
+$routes->get('apagar_equipas/(:num)','Admin::apagar_equipa/$1'); //pagina apagar equipas
 /*
  * --------------------------------------------------------------------
  * Additional Routing

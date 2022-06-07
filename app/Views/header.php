@@ -4,7 +4,7 @@
             <div class="header-top">
                 <div class="container">
                     <div class="logo">
-                        <img src="Img/logo.jpg" alt="Logo" srcset="">
+                        <img src="<?php echo base_url('Img/logo.jpg')?>" alt="Logo" srcset="">
                     </div>
                     <div class="header-top-right">
                         <!-- Burger button responsive -->
@@ -30,7 +30,7 @@
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end shadow-lg" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="/admin">Pagina só para admin</a></li>
+                                    <li><a class="dropdown-item" href="/admin">Pagina do admin</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>

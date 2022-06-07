@@ -1,10 +1,8 @@
 <div class="card">
     <div class="card-header">
         <br><h4 class="d-inline"> Tabela jogadores </h4>
-        <div class="btn-group mb-3 float-right d-inline" role="group" aria-label="Basic example">
-           <a href="/inserir_jogador" ><button type="button" class="btn btn-danger">Inserir jogador</button></a>
-           <a href="/atualizar_jogadores" ><button type="button" class="btn btn-danger">Atualizar jogador</button></a>
-           <a href="/apagar_jogadores" ><button type="button" class="btn btn-danger">Apagar jogador</button></a>
+        <div class="btn-group mb-3 float-right d-inline" role="group" aria-label="Basic example" style="float:right;">
+           <a href="/inserir_jogador" ><button type="button" class="btn btn-danger" >Inserir jogador</button></a>
            <a href="/associar_jogadores" ><button type="button" class="btn btn-danger">Associar jogador a uma equipa</button></a>
         </div>
     </div>
@@ -12,7 +10,6 @@
         <table class="table table-striped" id="table1">
             <thead>
                 <tr>
-                    <th>Equipa</th>
                     <th>Name</th>
                     <th>CC</th>
                     <th>Data<br>Nascimento</th>
@@ -21,13 +18,11 @@
                     <th>Morada</th>
                     <th>Cod_Postal</th>
                     <th>Telemovel</th>
-                    <th>Estado</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($jogadores as $jogador) : ?>
-                    <tr class="table-light">
-                        <td><?= $jogador->nome_equipa ?></td>
+                    <tr >
                         <td><?= $jogador->nome_jogador; ?></td>
                         <td><?= $jogador->cc_jogador; ?></td>
                         <td><?= $jogador->data_nascimento; ?></td>
@@ -36,8 +31,9 @@
                         <td><?= $jogador->morada; ?></td>
                         <td><?= $jogador->cod_Postal; ?></td>
                         <td><?= $jogador->telefone; ?></td>
-                        <td><?= $jogador->estado; ?></td>
-
+                        
+                        <td><a href="<?= base_url('/atualizar_jogadores/'.$jogador->id_jogador) ?>"><i class="bi bi-pencil"></i><a></td>
+                        <td><a href="<?= base_url('/apagar_jogadores/'.$jogador->id_jogador) ?>"><i class="bi bi-trash"></i><a></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>

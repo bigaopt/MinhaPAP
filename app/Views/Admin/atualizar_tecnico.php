@@ -3,7 +3,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Atualizar Jogador</h4>
+                    <h4 class="card-title">Atualizar Tecnico</h4>
                 </div>
                 <div class="card-content">
                     <div class="card-body">
@@ -12,10 +12,8 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="nome">Nome</label>
-                                        <select class="form-select" name="nome-column">
-                                            <?php foreach($nome_tecnicos as $nome) : ?> 
-                                             <option value="<?= $nome->id_tecnico ?>"><?= $nome->nome_tecnico ?></option>
-                                            <?php endforeach; ?>
+                                        <select class="form-control" name="id-column">
+                                            <option name="<?= $id ?>"><?= $nome ?></option> 
                                         </select>
                                     </div>
                                 </div>
@@ -65,10 +63,20 @@
                                         <input type="text" id="company-column" class="form-control" name="telemovel-column" placeholder="Telemóvel" maxlength="9">
                                     </div>
                                 </div>
+                                <div class="col-md-6 col-12">
+                                    <fieldset class="form-group">
+                                        <label for="cargo">Cargo</label>
+                                        <select class="form-select" name="cargo-column">
+                                            <option value="treinador principal">Treinador Principal</option>
+                                            <option value="treinador adjunto">Treinador adjunto</option>
+                                            <option value="diretor">Diretor</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button type="submit" class="btn btn-danger me-1 mb-1" >Atualizar técnico</button>
-                                    <button type="reset" class="btn btn-dark me-1 mb-1" > Limpar campos</button>
-                                    <a href="/tabela_tecnicos" ><button type="button" class="btn btn-danger">Voltar à tabela</button></a>
+                                    <button type="submit" class="btn btn-danger me-1 mb-1">Atualizar técnico</button>
+                                    <button type="reset" class="btn btn-dark me-1 mb-1"> Limpar campos</button>
+                                    <a href="/tabela_tecnicos"><button type="button" class="btn btn-danger">Voltar à tabela</button></a>
                                 </div>
                             </div>
                         </form>

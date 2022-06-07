@@ -1,4 +1,5 @@
 </main>
+</div>
 <footer>
                 <div class="container">
                     <div class="footer clearfix mb-0 text-muted">
@@ -17,17 +18,17 @@
     
 </body>
 
-<script src="assets/vendors/jquery/jquery.min.js"></script>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
-    <script src="assets/js/pages/dashboard.js"></script>
-    <script src="assets/js/pages/horizontal-layout.js"></script>
-    <script src="assets/js/main.js" ></script>
+<script src="<?php echo base_url('assets/vendors/jquery/jquery.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/vendors/apexcharts/apexcharts.js')?>"></script>
+    <script src="<?php echo base_url('assets/js/pages/dashboard.js')?>"></script>
+    <script src="<?php echo base_url('assets/js/pages/horizontal-layout.js')?>"></script>
+    <script src="<?php echo base_url('assets/js/main.js')?>"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script><!-- js do protocolo smtp -->
     <!--Scripts do multi select-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="<?php echo base_url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js')?>"></script>
+    <script src="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js')?>"></script>
     <!--Scripts do multi select-->
 
     <script type="text/javascript">
