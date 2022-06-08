@@ -75,6 +75,12 @@
                                 <span>Equipas</span>
                             </a>
                         </li>
+                        <li class="menu-item active ">
+                            <a href="/tabela_jogos" class='menu-link'>
+                                <i class="bi bi-person"></i>
+                                <span>Jogos</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

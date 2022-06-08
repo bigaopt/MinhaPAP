@@ -9,6 +9,7 @@ class Jogos extends Model
     protected $table = 'jogos';
     protected $primaryKey = 'id_jogo';
     protected $returnType = 'array';
+    protected $allowedFields = ['dia','hora','local','id_equipa','adversario','resultado','tipo_resultado'];
 
     public function getjogos_juniores()
     {
@@ -40,4 +41,12 @@ class Jogos extends Model
         return $query->getResult();  
     }
     
+    public function buscar_todos_jogos()
+    {
+        $db = db_connect();
+        
+        $query = $db->query("select equipas.nome_equipa,jogos.* from jogos join equipas on jogos.id_equipa = equipas.id_equipa order by dia DESC");
+        
+        return $query->getResult();  
+    }
 }

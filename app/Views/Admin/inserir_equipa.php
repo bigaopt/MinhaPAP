@@ -36,7 +36,7 @@
                                 <div class="col-12 d-flex justify-content-end">
                                     <button type="submit" class="btn btn-danger me-1 mb-1">Inserir equipa</button>
                                     <button type="reset" class="btn btn-dark me-1 mb-1">Limpar campos</button>
-                                    <a href="/tabela_jogadores"><button type="button" class="btn btn-danger">Voltar à tabela</button></a>
+                                    <a href="/tabela_equipas"><button type="button" class="btn btn-danger">Voltar à tabela</button></a>
                                 </div>
                             </div>
                         </form>

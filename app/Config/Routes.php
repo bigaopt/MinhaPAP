@@ -54,12 +54,13 @@ $routes->get('/tabela_jogadores','Admin::pagina_tabela_jogadores'); //pagina tab
 $routes->get('/tabela_tecnicos','Admin::pagina_tabela_tecnicos'); //pagina tabela tecnicos
 $routes->get('/tabela_equipas','Admin::pagina_tabela_equipas'); //pagina tabela equipas
 $routes->get('/inserir_equipa','Admin::pagina_inserir_equipa'); //pagina inserir equipa
+$routes->get('/tabela_jogos','Admin::pagina_tabela_jogos'); //pagina tabela jogos 
+$routes->get('/inserir_jogo','Admin::pagina_inserir_jogo'); //pagina inserir jogo
 
 $routes->get('atualizar_tecnico/(:num)','Admin::pagina_atualizar_tecnico/$1'); //pagina atualizar tecnico
 $routes->get('apagar_tecnico/(:num)','Admin::apagar_tecnico/$1'); //apaga tecnico
 $routes->get('atualizar_jogadores/(:num)','Admin::pagina_atualizar_dados_jogadores/$1'); //pagina atualizar jogadores
 $routes->get('apagar_jogadores/(:num)','Admin::apagar_jogadores/$1'); //pagina apagar jogadores
-
 $routes->get('apagar_equipas/(:num)','Admin::apagar_equipa/$1'); //pagina apagar equipas
 /*
  * --------------------------------------------------------------------

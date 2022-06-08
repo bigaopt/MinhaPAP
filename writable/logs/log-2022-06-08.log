@@ -1,0 +1,534 @@
+ERROR - 2022-06-08 03:54:30 --> Unknown column 'infantis' in 'where clause'
+CRITICAL - 2022-06-08 03:54:30 --> Unknown column 'infantis' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select count(eq...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select count(eq...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select count(eq...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(385): CodeIgniter\Database\BaseConnection->query('select count(eq...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+ERROR - 2022-06-08 03:54:47 --> Unknown column 'infantis' in 'where clause'
+CRITICAL - 2022-06-08 03:54:47 --> Unknown column 'infantis' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select count(eq...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select count(eq...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select count(eq...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(385): CodeIgniter\Database\BaseConnection->query('select count(eq...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+ERROR - 2022-06-08 03:54:54 --> Unknown column 'infantis' in 'where clause'
+CRITICAL - 2022-06-08 03:54:54 --> Unknown column 'infantis' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select count(eq...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select count(eq...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select count(eq...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(385): CodeIgniter\Database\BaseConnection->query('select count(eq...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-08 03:55:46 --> Undefined array key "escalao"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(385): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Admini...', 385)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+ERROR - 2022-06-08 03:55:59 --> Unknown column 'infantis' in 'where clause'
+CRITICAL - 2022-06-08 03:55:59 --> Unknown column 'infantis' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select count(eq...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select count(eq...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select count(eq...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(387): CodeIgniter\Database\BaseConnection->query('select count(eq...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+ERROR - 2022-06-08 03:58:37 --> Unknown column 'infantis' in 'where clause'
+CRITICAL - 2022-06-08 03:58:37 --> Unknown column 'infantis' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select count(eq...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select count(eq...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select count(eq...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(387): CodeIgniter\Database\BaseConnection->query('select count(eq...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-08 04:08:29 --> Object of class App\Models\Equipas could not be converted to int
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(391): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\Users\\Admini...', 391)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 04:09:03 --> Call to undefined method App\Models\Equipas::countResult
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(387): CodeIgniter\Model->__call('countResult', Array)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 04:10:10 --> Call to undefined method App\Models\Equipas::getResults
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(387): CodeIgniter\Model->__call('getResults', Array)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 04:12:14 --> Object of class App\Models\Equipas could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:12:42 --> Cannot use object of type App\Models\Equipas as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:13:07 --> Cannot use object of type App\Models\Equipas as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:13:08 --> Cannot use object of type App\Models\Equipas as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:14:51 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:15:14 --> Call to undefined method App\Models\Equipas::getRowArray
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(389): CodeIgniter\Model->__call('getRowArray', Array)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 04:15:26 --> Call to undefined method App\Models\Equipas::getResultArray
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(389): CodeIgniter\Model->__call('getResultArray', Array)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 04:18:30 --> Object of class App\Models\Equipas could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:20:52 --> syntax error, unexpected token "}"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Admini...')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#8 {main}
+ERROR - 2022-06-08 04:21:18 --> Not unique table/alias: 'equipas'
+CRITICAL - 2022-06-08 04:21:18 --> Not unique table/alias: 'equipas'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`n...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`n...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`n...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`n...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(392): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#11 {main}
+ERROR - 2022-06-08 04:21:51 --> Not unique table/alias: 'equipas'
+CRITICAL - 2022-06-08 04:21:51 --> Not unique table/alias: 'equipas'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`n...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`n...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`n...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`n...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(392): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#11 {main}
+ERROR - 2022-06-08 04:22:00 --> Not unique table/alias: 'equipas'
+CRITICAL - 2022-06-08 04:22:00 --> Not unique table/alias: 'equipas'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`n...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`n...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`n...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`n...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(392): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#11 {main}
+ERROR - 2022-06-08 04:22:01 --> Not unique table/alias: 'equipas'
+CRITICAL - 2022-06-08 04:22:01 --> Not unique table/alias: 'equipas'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`n...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`n...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`n...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`n...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(392): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#11 {main}
+ERROR - 2022-06-08 04:22:36 --> Not unique table/alias: 'equipas'
+CRITICAL - 2022-06-08 04:22:36 --> Not unique table/alias: 'equipas'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`e...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`e...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`e...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`e...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(392): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#11 {main}
+ERROR - 2022-06-08 04:22:37 --> Not unique table/alias: 'equipas'
+CRITICAL - 2022-06-08 04:22:37 --> Not unique table/alias: 'equipas'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(`e...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`e...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`e...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`e...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(392): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#11 {main}
+CRITICAL - 2022-06-08 04:30:20 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:32:45 --> Cannot access offset of type string on string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:32:53 --> Cannot access offset of type string on string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:34:05 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:34:53 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:35:07 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:35:31 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+ERROR - 2022-06-08 04:44:43 --> Unknown column 'infantis' in 'where clause'
+CRITICAL - 2022-06-08 04:44:43 --> Unknown column 'infantis' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(eq...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(eq...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(eq...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(388): CodeIgniter\Database\BaseConnection->query('SELECT count(eq...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-08 04:45:36 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(392): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\Users\\Admini...', 392)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 04:46:17 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:46:18 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:46:19 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:46:43 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-08 04:46:56 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('21')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+ERROR - 2022-06-08 05:03:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UPDAT `escaloes` SET `estado` = 'inativo' WHERE `escaloes`.`nome_escalao` = '...' at line 1
+CRITICAL - 2022-06-08 05:03:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UPDAT `escaloes` SET `estado` = 'inativo' WHERE `escaloes`.`nome_escalao` = '...' at line 1
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDAT `escaloes...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDAT `escaloes...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDAT `escaloes...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(395): CodeIgniter\Database\BaseConnection->query('UPDAT `escaloes...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('22')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-08 05:04:00 --> Trying to access array offset on value of type null
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(385): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\Admini...', 385)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('22')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 05:04:03 --> Trying to access array offset on value of type null
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(385): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\Admini...', 385)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('22')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+ERROR - 2022-06-08 05:07:18 --> Unknown column 'equipas.nome_escalao' in 'where clause'
+CRITICAL - 2022-06-08 05:07:18 --> Unknown column 'equipas.nome_escalao' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE  escaloe...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE  escaloe...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE  escaloe...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(395): CodeIgniter\Database\BaseConnection->query('UPDATE  escaloe...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('25')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-08 05:13:51 --> Trying to access array offset on value of type null
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(385): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\Admini...', 385)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->apagar_equipa('25')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+ERROR - 2022-06-08 06:38:46 --> Unknown column 'j.estado' in 'where clause'
+CRITICAL - 2022-06-08 06:38:46 --> Unknown column 'j.estado' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select j.id_jog...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select j.id_jog...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select j.id_jog...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Models\Jogadores.php(18): CodeIgniter\Database\BaseConnection->query('select j.id_jog...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Main.php(86): App\Models\Jogadores->getjogadores_juniores()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+ERROR - 2022-06-08 06:39:54 --> Unknown column 'j.estado' in 'where clause'
+CRITICAL - 2022-06-08 06:39:54 --> Unknown column 'j.estado' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select j.id_jog...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select j.id_jog...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select j.id_jog...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Models\Jogadores.php(18): CodeIgniter\Database\BaseConnection->query('select j.id_jog...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Main.php(86): App\Models\Jogadores->getjogadores_juniores()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-08 08:49:47 --> syntax error, unexpected token "/"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/inserir_j...', Array, true)
+#2 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(484): view('admin/inserir_j...', Array)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_inserir_jogo()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#8 {main}
+ERROR - 2022-06-08 08:56:51 --> Unknown column 'j.estado' in 'where clause'
+CRITICAL - 2022-06-08 08:56:51 --> Unknown column 'j.estado' in 'where clause'
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('select j.id_jog...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select j.id_jog...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select j.id_jog...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Models\Jogadores.php(18): CodeIgniter\Database\BaseConnection->query('select j.id_jog...')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Main.php(86): App\Models\Jogadores->getjogadores_juniores()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Main->juniores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+ERROR - 2022-06-08 09:15:30 --> Column 'nome_jogador' cannot be null
+CRITICAL - 2022-06-08 09:15:30 --> Column 'nome_jogador' cannot be null
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `jo...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `jo...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `jo...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jo...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->inserir_jogadores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+ERROR - 2022-06-08 09:16:00 --> Column 'nome_jogador' cannot be null
+CRITICAL - 2022-06-08 09:16:00 --> Column 'nome_jogador' cannot be null
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `jo...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `jo...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `jo...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jo...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->inserir_jogadores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+ERROR - 2022-06-08 09:16:07 --> Column 'nome_jogador' cannot be null
+CRITICAL - 2022-06-08 09:16:07 --> Column 'nome_jogador' cannot be null
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `jo...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `jo...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `jo...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jo...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->inserir_jogadores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-08 09:34:18 --> Trying to access array offset on value of type null
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(510): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\Admini...', 510)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->inserir_jogo()
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 09:34:59 --> Trying to access array offset on value of type null
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(504): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\Users\\Admini...', 504)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->inserir_jogo()
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-08 09:45:45 --> Undefined variable $nomes_equipas
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\inserir_jogo.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Admini...', 34)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/inserir_j...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(484): view('admin/inserir_j...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_inserir_jogo()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-08 10:04:15 --> Allowed fields must be specified for model: App\Models\Jogos
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Jogo...')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(510): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->inserir_jogo()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-08 10:06:16 --> Allowed fields must be specified for model: App\Models\Jogos
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Jogo...')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(511): CodeIgniter\Model->insert(Array)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->inserir_jogo()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}

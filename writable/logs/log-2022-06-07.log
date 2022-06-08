@@ -454,3 +454,15 @@ CRITICAL - 2022-06-07 08:01:05 --> Cannot delete or update a parent row: a forei
 #10 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #11 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
 #12 {main}
+CRITICAL - 2022-06-07 09:41:37 --> Undefined variable $jogadores
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\tabela_jogos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Admini...', 22)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/tabela_jo...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(460): view('admin/tabela_jo...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_tabela_jogos()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}

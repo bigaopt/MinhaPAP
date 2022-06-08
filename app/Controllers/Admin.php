@@ -8,13 +8,11 @@ use \App\Models\Equipas;
 
 use \App\Models\Tecnicos;
 
+use \App\Models\Jogos;
+
 class Admin extends BaseController
 {
-    public function __construct()
-    {
-        //funçao para meter o estado dos escaloes inativo se noa tiver nenhuma equipa
-    }
-
+   
     public function index()
     {
         if ((bool)session()->logado != true) {
@@ -76,7 +74,7 @@ class Admin extends BaseController
         } else {
             $model = new Jogadores();
 
-            $dados = $model->find($id);//procura o tecnico na base de dados
+            $dados = $model->find($id); //procura o tecnico na base de dados
 
             echo view('head');
             echo view('Admin/header2');
@@ -87,13 +85,13 @@ class Admin extends BaseController
 
     public function atualizar_dados_jogadores()
     {
-        $nome=$this->request->getPost('id-column');//vai buscar o nome do jogador à view
+        $nome = $this->request->getPost('id-column'); //vai buscar o nome do jogador à view
 
         $model = new Jogadores();
 
-        $data = $model->where('nome_jogador', $nome)->first();//PROCURA NA BASE DE DADOS O jogador COM O MESMO NOME
+        $data = $model->where('nome_jogador', $nome)->first(); //PROCURA NA BASE DE DADOS O jogador COM O MESMO NOME
 
-        
+
         $cc = $this->request->getPost('cc-column');
         $data_nascimento = $this->request->getPost('data-column');
         $genero = $this->request->getPost('genero-column');
@@ -121,15 +119,13 @@ class Admin extends BaseController
     public function apagar_jogadores($id)
     {
         $model = new Jogadores();
-       
-        $dados = $model->find($id);//procura se o id que recebeu existe na base de dados
-       
-        if($model->delete($dados))//se eliminar
+
+        $dados = $model->find($id); //procura se o id que recebeu existe na base de dados
+
+        if ($model->delete($dados)) //se eliminar
         {
             return redirect()->to(base_url('/tabela_jogadores'));
-        }
-        else
-        {
+        } else {
             return redirect()->to(base_url('/tabela_jogadores'));
         }
     }
@@ -225,7 +221,7 @@ class Admin extends BaseController
         } else {
             $model = new Tecnicos();
 
-            $data = $model->find($id);//procura o tecnico na base de dados
+            $data = $model->find($id); //procura o tecnico na base de dados
 
             echo view('head');
             echo view('Admin/header2');
@@ -236,12 +232,12 @@ class Admin extends BaseController
 
     public function atualizar_dados_tecnicos()
     {
-       
 
-        $nome=$this->request->getPost('id-column');
+
+        $nome = $this->request->getPost('id-column');
         $model = new Tecnicos();
 
-        $data = $model->where('nome_tecnico', $nome)->first();//PROCURA NA BASE DE DADOS O TECNICO COM O MESMO NOME
+        $data = $model->where('nome_tecnico', $nome)->first(); //PROCURA NA BASE DE DADOS O TECNICO COM O MESMO NOME
 
         $cc = $this->request->getPost('cc-column');
         $data_nascimento = $this->request->getPost('data-column');
@@ -250,12 +246,12 @@ class Admin extends BaseController
         $morada = $this->request->getPost('morada-column');
         $cod_postal = $this->request->getPost('CodPostal-column');
         $telemovel = $this->request->getPost('telemovel-column');
-        $cargo= $this->request->getPost('cargo-column');
+        $cargo = $this->request->getPost('cargo-column');
 
-        
-        
+
+
         $dados_tecnico = [
-            'nome_tecnico' => $nome, 
+            'nome_tecnico' => $nome,
             'cc_tecnico' => $cc,
             'data_nascimento' => $data_nascimento,
             'genero' => $genero,
@@ -266,14 +262,14 @@ class Admin extends BaseController
             'cargo' => $cargo
         ];
 
-       
+
 
         $model = new Tecnicos();
 
-        $db= db_connect();
+        $db = db_connect();
 
         $query = $db->table('tecnicos')->where('id_tecnico', $data['id_tecnico'])->update($dados_tecnico);
-            
+
         return redirect()->to(base_url('/tabela_tecnicos'));
     }
 
@@ -284,16 +280,13 @@ class Admin extends BaseController
         $dados = $model->find($id); //procura se o id que recebeu existe na base de dados
 
 
-        if($model->delete($dados))//se eliminar
+        if ($model->delete($dados)) //se eliminar
         {
             return redirect()->to(base_url('/tabela_tecnicos'));
-        }
-        else
-        {
+        } else {
             return redirect()->to(base_url('/tabela_tecnicos'));
         }
-
-   }
+    }
 
     public function pagina_associar_tecnico()
     {
@@ -383,22 +376,32 @@ class Admin extends BaseController
 
     public function apagar_equipa($id)
     {
-        $db= db_connect();
+        $db = db_connect();
 
         $model = new Equipas();
 
         $dados = $model->find($id); //procura se o id que recebeu existe na base de dados
 
+        $escalao = $dados['nome_escalao'];
+             
 
-        if($db->table('equipas')->delete($dados))//se eliminar
+        $query = $db->query("SELECT count(equipas.nome_equipa) as equipas from equipas where nome_escalao like '$escalao' ");
+
+        echo $query->getRow()->equipas;
+
+        if( $query->getRow()->equipas <= 1)//se tiver mais que uma equipa
         {
+            $db->table('equipas')->delete($dados);//elimina a equipa
+            $apagar_escalao = $db->query("UPDATE escaloes set escaloes.estado = 'inativo' where  escaloes.nome_escalao like '$dados[nome_escalao]' ");//muda o estado para inativo o escalao da equipa que foi apagada
             return redirect()->to(base_url('/tabela_equipas'));
         }
         else
         {
+            $db->table('equipas')->delete($dados);//elimina a equipa
             return redirect()->to(base_url('/tabela_equipas'));
         }
     }
+    
 
     public function pagina_inserir_equipa()
     {
@@ -412,7 +415,7 @@ class Admin extends BaseController
 
             echo view('head');
             echo view('Admin/header2');
-            echo view('admin/inserir_equipa',['escaloes'=>$escaloes]);
+            echo view('admin/inserir_equipa', ['escaloes' => $escaloes]);
             echo view('footer');
         }
     }
@@ -430,25 +433,82 @@ class Admin extends BaseController
             'classificacao' => $classificaçao
         ];
 
-        $db= db_connect();
-        if($db->table('equipas')->insert($dados_equipa))
-        {
-            $query=$db->query("select escaloes.nome_escalao, escaloes.estado from escaloes join equipas on equipas.nome_escalao = escaloes.nome_escalao where equipas.nome_equipa like'$nome'");//procura o estado da equipa que acabei de inserir
-            
+        $db = db_connect();
+        if ($db->table('equipas')->insert($dados_equipa)) {
+            $query = $db->query("SELECT escaloes.nome_escalao, escaloes.estado from escaloes join equipas on equipas.nome_escalao = escaloes.nome_escalao where equipas.nome_equipa like'$nome'"); //procura o estado da equipa que acabei de inserir
+
             $estado = $query->getRowArray();
 
             $estado_escalao = $estado['estado'];
 
-            if($estado_escalao == 'inativo')
-            {
-                $db->table('escaloes')->where('nome_escalao', $escalao)->update(['estado' => 'ativo']);//se o estado tiver inativo altera para ativo
+            if ($estado_escalao == 'inativo') {
+                $db->table('escaloes')->where('nome_escalao', $escalao)->update(['estado' => 'ativo']); //se o estado tiver inativo altera para ativo
             }
-            return redirect()->to(base_url('/tabela_equipas')); 
-        }
-        else
-        {
+            return redirect()->to(base_url('/tabela_equipas'));
+        } else {
             die("erro ao inserir equipa");
             return redirect()->to(base_url('/tabela_equipas'));
         }
+    }
+
+    public function pagina_tabela_jogos()
+    {
+        if ((bool)session()->logado != true) {
+            return redirect()->to(base_url('/login'));
+        } else {
+
+            $model = new Jogos();
+
+            $jogos = $model->buscar_todos_jogos(); 
+            
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/tabela_jogos',['jogos'=>$jogos] );
+            echo view('footer');
+        }
+    }
+
+    public function pagina_inserir_jogo()
+    {
+        if ((bool)session()->logado != true) {
+            return redirect()->to(base_url('/login'));
+        } else {      
+            
+            $model = new Equipas();
+
+            $equipas = $model->buscar_nomes_equipas();
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/inserir_jogo',['equipas'=>$equipas]);
+            echo view('footer');
+        }
+    }
+
+    public function inserir_jogo()
+    {
+        $hora = $this->request->getPost('hora-column');
+        $data = $this->request->getPost('data-column');
+        $local = $this->request->getPost('local-column');
+        $equipa = $this->request->getPost('equipa-column');
+        $adversario = $this->request->getPost('adversario-column');
+        $resultado = $this->request->getPost('resultado-column');
+        $tipo_resultado = $this->request->getPost('tipo-resultado');
+        
+        $dados = [
+            'hora' => $hora,
+            'dia' => $data,
+            'local' => $local,
+            'id_equipa' => $equipa,
+            'adversario' => $adversario,
+            'resultado' => $resultado,
+            'tipo_resultado' => $tipo_resultado
+        ];
+
+       $model = new Jogos();
+       
+       $insert = $model->insert($dados);
+       return redirect()->to(base_url('/tabela_jogos'));
     }
 }
