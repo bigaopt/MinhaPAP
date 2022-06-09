@@ -29,6 +29,7 @@
                         <td><?= $equipa->empates; ?></td>
                         <td><?= $equipa->derrotas; ?></td>
                         <td><?= $equipa->classificacao; ?></td>
+                        <td><a href="<?= base_url('/atualizar_equipa/'.$equipa->id_equipa) ?>"><i class="bi bi-pencil"></i><a></td>
                         <td><a href="<?= base_url('/apagar_equipas/'.$equipa->id_equipa) ?>"><i class="bi bi-trash"></i><a></td>
                     </tr>
                 <?php endforeach ?>

@@ -300,7 +300,7 @@
                                 <tbody>
                                     <?php foreach ($dados_jogadores as $jogador) : ?>
                                         <tr class="table-light"> 
-                                            <td>"><?= $jogador->nome_jogador; ?></td>
+                                            <td><?= $jogador->nome_jogador; ?></td>
                                             <td><?= $jogador->data_nascimento; ?></td>
                                             <td><?= $jogador->genero; ?></td>
                                             <td><?= $jogador->nacionalidade; ?></td>

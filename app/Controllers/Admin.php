@@ -511,4 +511,59 @@ class Admin extends BaseController
        $insert = $model->insert($dados);
        return redirect()->to(base_url('/tabela_jogos'));
     }
+
+    public function apagar_jogos($id)
+    {
+        $model = new Jogos();
+
+        $dados = $model->find($id); //procura se o id que recebeu existe na base de dados
+
+        if($model->delete($dados)) //se eliminar o jogo
+        {
+            return redirect()->to(base_url('/tabela_jogos'));
+        }
+        else
+        {
+            die("erro ao eliminar jogo");
+            return redirect()->to(base_url('/tabela_jogos'));
+        }
+    }
+
+    public function pagina_atualizar_equipa($id)
+    {
+        if ((bool)session()->logado != true) {
+            return redirect()->to(base_url('/login'));
+        } else {      
+            $model = new Equipas();
+
+            $data = $model->find($id); //procura a equipa na base de dados
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/atualizar_equipa',['id'=>$data['id_equipa'],'nome'=>$data['nome_equipa']]);
+            echo view('footer');
+        }
+    }
+
+    public function atualizar_equipa()
+    {
+        $nome = $this->request->getPost('equipa-column');
+
+        $model = new Equipas();
+
+        $equipa = $model->where('nome_equipa',$nome)->first(); //procura a equipa na base de dados
+
+        
+
+        $classificaçao = $this->request->getPost('classificacao-column');
+
+        $dados = [
+            'classificacao' => $classificaçao
+        ];
+
+        $db = db_connect();
+        $db->table('equipas')->where('id_equipa', $equipa['id_equipa'])->update($dados);
+
+        return redirect()->to(base_url('/tabela_equipas'));
+    }
 }

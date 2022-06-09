@@ -29,7 +29,7 @@
                         <td><?= $jogo->resultado; ?></td>
                         <td><?= $jogo->tipo_resultado; ?></td>
                         
-                        <td><a href="<?= base_url('/apagar_jogadores/'.$jogo->id_jogo) ?>"><i class="bi bi-trash"></i><a></td>
+                        <td><a href="<?= base_url('/apagar_jogo/'.$jogo->id_jogo) ?>"><i class="bi bi-trash"></i><a></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
