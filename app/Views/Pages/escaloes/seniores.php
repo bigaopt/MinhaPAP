@@ -118,7 +118,7 @@
                                         <hr>
 
                                         <div class="row">
-                                            <h5>Medios</h5>
+                                            <h5>Médios</h5>
                                             <div class="row">
                                                 <div class="col-3 text-center" id="david">
                                                     <img src="Img/seniores/Abilio_md.png" width="100%" height="70%">
@@ -200,7 +200,7 @@
                                         <hr>
 
                                        <div class="row">
-                                            <h5>Tecnicos</h5>
+                                            <h5>Técnicos</h5>
                                             <div class="row">
                                                 <div class="col-3 text-center">
                                                     <img src="Img/seniores/Pedro_Silva_treinador_principal.png" width="100%" height="70%">
@@ -259,8 +259,8 @@
                                                 <tbody>
                                                     <?php foreach ($dados_jogos as $jogo) : ?>
                                                         <tr class="table-light">
-                                                            <td><?= $jogo->dia; ?></td>
-                                                            <td><?= $jogo->hora; ?></td>
+                                                            <td><?= date('d/m/Y', strtotime($jogo->dia)); ?></td>
+                                                            <td><?= date('H:i', strtotime($jogo->hora)); ?></td>
                                                             <td><?= $jogo->local; ?></td>
                                                             <td><?= $jogo->nome_equipa; ?></td>
                                                             <td><?= $jogo->adversario; ?></td>
@@ -301,7 +301,7 @@
                                     <?php foreach ($dados_jogadores as $jogador) : ?>
                                         <tr class="table-light"> 
                                             <td><?= $jogador->nome_jogador; ?></td>
-                                            <td><?= $jogador->data_nascimento; ?></td>
+                                            <td><?= date('d/m/Y', strtotime($jogador->data_nascimento)); ?></td>
                                             <td><?= $jogador->genero; ?></td>
                                             <td><?= $jogador->nacionalidade; ?></td>
                                         </tr>

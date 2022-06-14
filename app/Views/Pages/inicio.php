@@ -85,8 +85,8 @@
                                     <tbody>
                                         <?php foreach ($jogos as $jogo) : ?>
                                             <tr class="table-light">
-                                                <td><?= $jogo->dia; ?></td>
-                                                <td><?= $jogo->hora; ?></td>
+                                                <td><?= date('d/m/Y', strtotime($jogo->dia)); ?></td>
+                                                <td><?= date('H:i', strtotime($jogo->hora)); ?></td>
                                                 <td><?= $jogo->local; ?></td>
                                                 <td><?= $jogo->nome_equipa; ?></td>
                                                 <td><?= $jogo->adversario; ?></td>

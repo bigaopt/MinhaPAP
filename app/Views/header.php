@@ -51,7 +51,7 @@
                         <li class="menu-item  ">
                             <a href="inicio" class='menu-link'>
                                 <i class="bi bi-house-fill"></i>
-                                <span>Inicio</span>
+                                <span>Início</span>
                             </a>
                         </li>
 

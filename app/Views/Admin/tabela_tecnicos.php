@@ -28,7 +28,7 @@
                     <tr>
                         <td><?= $tecnico->nome_tecnico; ?></td>
                         <td><?= $tecnico->cc_tecnico; ?></td>
-                        <td><?= $tecnico->data_nascimento; ?></td>
+                        <td><?= date('d/m/Y', strtotime($tecnico->data_nascimento)); ?></td>
                         <td><?= $tecnico->genero; ?></td>
                         <td><?= $tecnico->nacionalidade; ?></td>
                         <td><?= $tecnico->morada; ?></td>

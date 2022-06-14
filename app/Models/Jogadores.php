@@ -32,7 +32,7 @@ class Jogadores extends Model
     {
         $db = db_connect();
 
-        $query = $db->query("select id_jogador,nome_jogador from jogadores where jogadores.estado = 'ativo' ");
+        $query = $db->query("select id_jogador,nome_jogador from jogadores ");
 
         return $query->getResult();
     }

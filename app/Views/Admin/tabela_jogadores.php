@@ -25,7 +25,7 @@
                     <tr >
                         <td><?= $jogador->nome_jogador; ?></td>
                         <td><?= $jogador->cc_jogador; ?></td>
-                        <td><?= $jogador->data_nascimento; ?></td>
+                        <td><?= date('d/m/Y', strtotime($jogador->data_nascimento)); ?></td>
                         <td><?= $jogador->genero; ?></td>
                         <td><?= $jogador->nacionalidade; ?></td>
                         <td><?= $jogador->morada; ?></td>

@@ -10,10 +10,10 @@
                             </div>
                             <div class="card-body">
                                 <p>
-                                    O Grupo Desportivo Milheiroense foi fundado em 23 de outubro de 1975 e o seu atual presidente é Fernando Campos.
+                                O Grupo Desportivo Milheiroense foi fundado em 23 de outubro de 1975 e o seu atual presidente é Fernando Campos.
                                 </p>
                                 <p>
-                                    Na época atual(2021-2022), a equipa dos seniores participa no campeonato distrital da 1ª Divisão distrital.
+                                Na época atual(2021 – 2022), a equipa dos seniores participa no campeonato distrital da 1.ª Divisão distrital.
                                 </p>
                                 <div class="googlemaps">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.2123187085213!2d-8.475286948766993!3d40.91109033324654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7765393e067ae381!2sGrupo%20Desportivo%20Milheiroense!5e0!3m2!1spt-PT!2spt!4v1649691697979!5m2!1spt-PT!2spt" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
