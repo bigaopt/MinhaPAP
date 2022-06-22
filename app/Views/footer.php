@@ -25,15 +25,18 @@
     <script src="<?php echo base_url('assets/js/pages/dashboard.js')?>"></script>
     <script src="<?php echo base_url('assets/js/pages/horizontal-layout.js')?>"></script>
     <script src="<?php echo base_url('assets/js/main.js')?>"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script><!-- js do protocolo smtp -->
-    <!--Scripts do multi select-->
+    <script src="<?php echo base_url('assets/js/modal.js')?>"></script><!--script do modal-->
+    <script src="<?php echo base_url('https://smtpjs.com/v3/smtp.js')?>"></script><!-- js do protocolo smtp -->
     <script src="<?php echo base_url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js')?>"></script>
     <script src="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/SweetAlert/dist/sweetalert2.all.min.js')?>"></script>
+
     <!--Scripts do multi select-->
 
     <script type="text/javascript">
         $(document).ready(function(){
            clubeApp.home.init();
+           clubeApp.home.jogador();
         });
     </script>
 

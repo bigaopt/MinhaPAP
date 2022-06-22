@@ -8,7 +8,7 @@ class Jogadores extends Model
 {
     protected $table = 'jogadores';
     protected $primaryKey = 'id_jogador';
-    protected $AllowFields = ['nome_jogador', 'cc_jogador', 'data_nascimento', 'genero', 'nacionalidade', 'morada', 'cod_Postal', 'telefone'];
+    protected $AllowFields = ['nome_jogador', 'cc_jogador', 'data_nascimento', 'genero', 'nacionalidade', 'morada', 'cod_Postal', 'telefone','estado'];
         
 
     public function getjogadores_juniores()
@@ -40,7 +40,7 @@ class Jogadores extends Model
     public function mostrar_todos_jogadores()
     {
         $db = db_connect();
-        $query = $db->query('select * from jogadores ');
+        $query = $db->query("select * from jogadores where jogadores.estado like 'ativo' ");
 
         return $query->getResult();
     }

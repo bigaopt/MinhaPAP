@@ -50,21 +50,21 @@
 
                         <li class="menu-item  ">
                             <a href="inicio" class='menu-link'>
-                                <i class="bi bi-house-fill"></i>
+                                <i class="bi bi-house-fill" style="color:white;"></i>
                                 <span>Início</span>
                             </a>
                         </li>
 
                         <li class="menu-item  ">
                             <a href="clube" class='menu-link'>
-                                <i class="bi bi-shield-fill"></i>
+                                <i class="bi bi-shield-fill" style="color:white;"></i>
                                 <span>Clube</span>
                             </a>
                         </li>
 
                         <li class="menu-item active has-sub">
                             <a href="#" class='menu-link'>
-                                <i class="bi bi-bar-chart-steps"></i>
+                                <i class="bi bi-bar-chart-steps" style="color:white;"></i>
                                 <span>Escalões</span>
                             </a>
                             <div class="submenu ">
@@ -87,14 +87,14 @@
 
                         <li class="menu-item  ">
                             <a href="noticias" class='menu-link'>
-                                <i class="bi bi-newspaper"></i>
+                                <i class="bi bi-newspaper" style="color:white;"></i>
                                 <span>Notícias</span>
                             </a>
                         </li>
 
                         <li class="menu-item  ">
                             <a href="loja" class='menu-link'>
-                                <i class="bi bi-shop-window"></i>
+                                <i class="bi bi-shop-window" style="color:white;"></i>
                                 <span>Loja</span>
                             </a>
                         </li>

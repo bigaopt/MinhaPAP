@@ -20,13 +20,13 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="cc">Cartão Cidadao</label>
-                                        <input type="text" id="last-name-column" class="form-control" placeholder="Cartão de Cidadão" name="cc-column" maxlength="9">
+                                        <input type="text" id="last-name-column" class="form-control" placeholder="Cartão de Cidadão" name="cc-column" maxlength="9" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="data_nascimento">Data de nascimento</label>
-                                        <input type="date" id="city-column" class="form-control" placeholder="Data" name="data-column">
+                                        <input type="date" id="city-column" class="form-control" placeholder="Data" name="data-column" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
@@ -41,26 +41,50 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="nacionalidade">Nacionalidade</label>
-                                        <input type="text" id="country-floating" class="form-control" name="nacionalidade-column" placeholder="Nacionalidade">
+                                        <select class="form-select" name="nacionalidade-column">
+                                            <option value="alemã(ão)">alemã(ão)</option>
+                                            <option value="argentino(a)">argentino(a)</option>
+                                             <option value="brasileiro(a)">brasileiro(a)</option>
+                                            <option value="belga">belga</option>
+                                            <option value="cabo-verdiano(a)">cabo-verdiano(a)</option>
+                                            <option value="colombiano(a)">colombiano(a)</option>
+                                            <option value="dinamarquês(esa">dinamarquês(esa)</option>
+                                            <option value="espanhol(a)">espanhol(a)</option>
+                                            <option value="norte-americano(a)">norte-americano(a)</option>
+                                            <option value="francês(esa)">francês(esa)</option>
+                                            <option value="ganês(a)">ganês(a)</option>
+                                            <option value="guineano(a)">guineano(a)</option>
+                                            <option value="inglês(esa)">inglês(esa)</option>
+                                            <option value="italiano(a)">italiano(a)</option>
+                                            <option value="luxemburguês(a)">luxemburguês(a) </option>
+                                            <option value="marroquino(a)">marroquino(a)</option>
+                                            <option value="mexicano(a)">mexicano(a)</option>
+                                            <option value="norueguês(esa)">norueguês(esa)</option>
+                                            <option value="neerlandês(a)">neerlandês(a)</option>
+                                            <option value="português(esa)" selected>português(esa)</option>
+                                            <option value="britânico(a)">britânico(a)</option>
+                                            <option value="suíço(a)">suíço(a)</option>
+                                            <option value="venezuelano(a)">venezuelano(a)</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="morada">Morada</label>
-                                        <input type="text" id="company-column" class="form-control" name="morada-column" placeholder="Morada">
+                                        <input type="text" id="company-column" class="form-control" name="morada-column" placeholder="Morada" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="codigo-postal">Código Postal</label>
-                                        <input type="text" id="email-id-column" class="form-control" name="CodPostal-column" placeholder="Código Postal" required pattern="\d{4}-\d{3}" />
+                                        <input type="text" id="email-id-column" class="form-control" name="CodPostal-column" placeholder="Código Postal" required pattern="\d{4}-\d{3}"  required/>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="telemovel">Telemóvel</label>
-                                        <input type="text" id="company-column" class="form-control" name="telemovel-column" placeholder="Telemóvel" maxlength="9">
+                                        <input type="text" id="company-column" class="form-control" name="telemovel-column" placeholder="Telemóvel" maxlength="9" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">

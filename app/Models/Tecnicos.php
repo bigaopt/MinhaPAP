@@ -32,7 +32,7 @@ class Tecnicos extends Model
     {
         $db = db_connect();
 
-        $query = $db->query('select * from tecnicos ');
+        $query = $db->query("select * from tecnicos where tecnicos.estado like 'Ativo' "); 
 
         return $query->getResult();
    }

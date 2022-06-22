@@ -12,7 +12,7 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="nome">Nome</label>
-                                        <input type="text" id="first-name-column" class="form-control" placeholder="Nome Equipa" name="nome-column">
+                                        <input type="text" id="first-name-column" class="form-control" placeholder="Nome Equipa" name="nome-column" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
@@ -30,7 +30,7 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="data_nascimento">Classificação</label>
-                                        <input type="text" id="classificacao-column" class="form-control" placeholder="classificação" name="classificacao-column">
+                                        <input type="text" id="classificacao-column" class="form-control" placeholder="classificação" name="classificacao-column" required>
                                     </div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-end">

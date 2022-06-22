@@ -102,7 +102,7 @@ class Equipas extends Model
     {
 
         $db = db_connect();
-        $query = $db->query("select* from equipas");
+        $query = $db->query("select* from equipas where equipas.estado like 'ativo' ");
 
         return $query->getResult();
     }

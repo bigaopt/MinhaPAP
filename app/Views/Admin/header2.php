@@ -49,14 +49,14 @@
                     <ul class="navbar mx-auto justify-content-around">
                         <li class="menu-item  ">
                             <a href="inicio" class='menu-link'>
-                                <i class="bi bi-house-fill"></i>
+                                <i class="bi bi-house-fill"  style="color:white;"></i>
                                 <span>Início</span>
                             </a>
                         </li>
 
                         <li class="menu-item active ">
                             <a href="/tabela_jogadores" class='menu-link'>
-                            <i class="bi bi-person"></i>
+                            <i class="bi bi-person" style="color:white;"></i>
                                 <span>Jogadores</span>
                             </a>
                         </li>
@@ -64,20 +64,20 @@
 
                         <li class="menu-item active ">
                             <a href="/tabela_tecnicos" class='menu-link'>
-                                <i class="bi bi-person"></i>
+                                <i class="bi bi-person" style="color:white;"></i>
                                 <span>Tecnicos</span>
                             </a>
                         </li>
 
                         <li class="menu-item active ">
                             <a href="/tabela_equipas" class='menu-link'>
-                                <i class="bi bi-person"></i>
+                                <i class="bi bi-person" style="color:white;"></i>
                                 <span>Equipas</span>
                             </a>
                         </li>
                         <li class="menu-item active ">
                             <a href="/tabela_jogos" class='menu-link'>
-                                <i class="bi bi-person"></i>
+                                <i class="bi bi-person" style="color:white;"></i>
                                 <span>Jogos</span>
                             </a>
                         </li>

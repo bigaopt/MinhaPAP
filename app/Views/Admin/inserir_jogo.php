@@ -12,19 +12,19 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="hora">Hora</label>
-                                        <input type="time"  class="form-control"  name="hora-column">
+                                        <input type="time"  class="form-control"  name="hora-column" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="data">Data</label>
-                                        <input type="date" id="data-column" class="form-control" placeholder="Data" name="data-column">
+                                        <input type="date" id="data-column" class="form-control" placeholder="Data" name="data-column" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="local">Local</label>
-                                        <input type="text" id="last-name-column" class="form-control" placeholder="Local do jogo" name="local-column" >
+                                        <input type="text" id="last-name-column" class="form-control" placeholder="Local do jogo" name="local-column"  required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
@@ -40,22 +40,22 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="adversario">Adversário</label>
-                                        <input type="text" id="country-floating" class="form-control" name="adversario-column" placeholder="Equipa adversária">
+                                        <input type="text" id="country-floating" class="form-control" name="adversario-column" placeholder="Equipa adversária" required>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="resultado">Resultado</label>
-                                        <input type="text" id="company-column" class="form-control" name="resultado-column" placeholder="Resultado" required pattern="^(?[0-9])[0-9]-(?[0-9])[0-9]$">
+                                        <input type="text" id="company-column" class="form-control" name="resultado-column" placeholder="Resultado" required pattern="^(?[0-9])[0-9]-(?[0-9])[0-9]$" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="tipo_resultado">Tipo de resultado</label>
                                         <select class="form-select" name="tipo-resultado">
-                                            <option value="vitoria">Vitória</option>
-                                            <option value="empates">Empate</option>
+                                            <option value="vitoria" selected>Vitória</option>
+                                            <option value="empate">Empate</option>
                                             <option value="derrota">Derrota</option>
                                         </select>
                                     </div>

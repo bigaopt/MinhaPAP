@@ -11,6 +11,7 @@
         <table class="table table-striped" id="table1">
             <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Nome</th>
                     <th>Cartao cidadao</th>
                     <th>Data Nascimento</th>
@@ -26,6 +27,7 @@
             <tbody>
                 <?php foreach ($tecnicos as $tecnico) : ?>
                     <tr>
+                        <td><?= $tecnico->id_tecnico; ?></td>
                         <td><?= $tecnico->nome_tecnico; ?></td>
                         <td><?= $tecnico->cc_tecnico; ?></td>
                         <td><?= date('d/m/Y', strtotime($tecnico->data_nascimento)); ?></td>
@@ -36,8 +38,8 @@
                         <td><?= $tecnico->telefone; ?></td>
                         <td><?= $tecnico->cargo; ?></td>
                         
-                        <td><a href="<?= base_url('/atualizar_tecnico/'.$tecnico->id_tecnico) ?>"><i class="bi bi-pencil"></i></a></td>
-                        <td><a href="<?= base_url('/apagar_tecnico/'.$tecnico->id_tecnico) ?>"> <i class="bi bi-trash"></i><a></td>
+                        <td><button class="btn btn-dark"><a href="<?= base_url('/atualizar_tecnico/'.$tecnico->id_tecnico) ?>"><i class="bi bi-pencil-fill"></i></a></button></td>
+                        <td><button class="btn btn-dark"><a href="<?= base_url('/confirmaçao_tecnico/'.$tecnico->id_tecnico) ?>"><i class="bi bi-trash-fill"></i></a></button></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>

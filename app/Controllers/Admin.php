@@ -12,7 +12,7 @@ use \App\Models\Jogos;
 
 class Admin extends BaseController
 {
-   
+
     public function index()
     {
         if ((bool)session()->logado != true) {
@@ -116,18 +116,31 @@ class Admin extends BaseController
         return redirect()->to(base_url('/admin'));
     }
 
-    public function apagar_jogadores($id)
+    public function confimacao_apagar_jogador($id)
     {
+
         $model = new Jogadores();
 
-        $dados = $model->find($id); //procura se o id que recebeu existe na base de dados
+        $jogador = $model->find($id);
 
-        if ($model->delete($dados)) //se eliminar
-        {
-            return redirect()->to(base_url('/tabela_jogadores'));
-        } else {
-            return redirect()->to(base_url('/tabela_jogadores'));
-        }
+        $nome = $jogador['nome_jogador'];
+
+        echo view('head');
+        echo view('admin/pagina_apagar_jogador', ['nome' => $nome, 'id' => $id]);
+    }
+
+    public function apagar_jogadores($id)
+    {
+
+        $dados = [
+            'estado' => 'inativo'
+        ];
+
+        $db = db_connect();
+
+        $db->table('jogadores')->where('id_jogador', $id)->update($dados);
+
+        return redirect()->to(base_url('/tabela_jogadores'));
     }
 
     public function pagina_associar_jogadores()
@@ -273,19 +286,32 @@ class Admin extends BaseController
         return redirect()->to(base_url('/tabela_tecnicos'));
     }
 
+    public function confimacao_apagar_tecnico($id)
+    {
+        $model = new Tecnicos();
+
+        $tecnico = $model->find($id);
+
+        $nome = $tecnico['nome_tecnico'];
+
+        echo view('head');
+        echo view('admin/pagina_apagar_tecnico', ['nome' => $nome, 'id' => $id]);
+    }
+
     public function apagar_tecnico($id) //recebe o id do URL
     {
         $model = new Tecnicos();
 
-        $dados = $model->find($id); //procura se o id que recebeu existe na base de dados
+        $dados = [
+            'estado' => 'inativo'
+        ];
+
+        $db = db_connect();
 
 
-        if ($model->delete($dados)) //se eliminar
-        {
-            return redirect()->to(base_url('/tabela_tecnicos'));
-        } else {
-            return redirect()->to(base_url('/tabela_tecnicos'));
-        }
+        $db->table('tecnicos')->where('id_tecnico', $id)->update($dados);
+
+        return redirect()->to(base_url('/tabela_tecnicos'));
     }
 
     public function pagina_associar_tecnico()
@@ -374,6 +400,18 @@ class Admin extends BaseController
         }
     }
 
+    public function confimacao_apagar_equipa($id)
+    {
+        $model = new Equipas();
+
+        $equipa = $model->find($id);
+
+        $nome = $equipa['nome_equipa'];
+
+        echo view('head');
+        echo view('admin/pagina_apagar_equipa', ['nome' => $nome, 'id' => $id]);
+    }
+
     public function apagar_equipa($id)
     {
         $db = db_connect();
@@ -383,25 +421,27 @@ class Admin extends BaseController
         $dados = $model->find($id); //procura se o id que recebeu existe na base de dados
 
         $escalao = $dados['nome_escalao'];
-             
 
-        $query = $db->query("SELECT count(equipas.nome_equipa) as equipas from equipas where nome_escalao like '$escalao' ");
+
+        $query = $db->query("SELECT count(equipas.nome_equipa) as equipas from equipas where nome_escalao like '$escalao' and estado like 'ativo'"); //conta o numero de equipas que estao ativas de um escalao
 
         echo $query->getRow()->equipas;
 
-        if( $query->getRow()->equipas <= 1)//se tiver mais que uma equipa
+        $estado = [
+            'estado' => 'inativo'
+        ];
+
+        if ($query->getRow()->equipas <= 1) //se tiver mais que uma equipa
         {
-            $db->table('equipas')->delete($dados);//elimina a equipa
-            $apagar_escalao = $db->query("UPDATE escaloes set escaloes.estado = 'inativo' where  escaloes.nome_escalao like '$dados[nome_escalao]' ");//muda o estado para inativo o escalao da equipa que foi apagada
+            $db->table('equipas')->where('id_equipa', $id)->update($estado); //elimina a equipa
+            $apagar_escalao = $db->query("UPDATE escaloes set escaloes.estado = 'inativo' where  escaloes.nome_escalao like '$escalao' "); //muda o estado para inativo o escalao da equipa que foi apagada
             return redirect()->to(base_url('/tabela_equipas'));
-        }
-        else
-        {
-            $db->table('equipas')->delete($dados);//elimina a equipa
+        } else {
+            $db->table('equipas')->where('id_equipas', $id)->update($estado); //elimina a equipa
             return redirect()->to(base_url('/tabela_equipas'));
         }
     }
-    
+
 
     public function pagina_inserir_equipa()
     {
@@ -459,12 +499,12 @@ class Admin extends BaseController
 
             $model = new Jogos();
 
-            $jogos = $model->buscar_todos_jogos(); 
-            
+            $jogos = $model->buscar_todos_jogos();
+
 
             echo view('head');
             echo view('Admin/header2');
-            echo view('admin/tabela_jogos',['jogos'=>$jogos] );
+            echo view('admin/tabela_jogos', ['jogos' => $jogos]);
             echo view('footer');
         }
     }
@@ -473,15 +513,15 @@ class Admin extends BaseController
     {
         if ((bool)session()->logado != true) {
             return redirect()->to(base_url('/login'));
-        } else {      
-            
+        } else {
+
             $model = new Equipas();
 
             $equipas = $model->buscar_nomes_equipas();
 
             echo view('head');
             echo view('Admin/header2');
-            echo view('admin/inserir_jogo',['equipas'=>$equipas]);
+            echo view('admin/inserir_jogo', ['equipas' => $equipas]);
             echo view('footer');
         }
     }
@@ -495,7 +535,7 @@ class Admin extends BaseController
         $adversario = $this->request->getPost('adversario-column');
         $resultado = $this->request->getPost('resultado-column');
         $tipo_resultado = $this->request->getPost('tipo-resultado');
-        
+
         $dados = [
             'hora' => $hora,
             'dia' => $data,
@@ -506,41 +546,59 @@ class Admin extends BaseController
             'tipo_resultado' => $tipo_resultado
         ];
 
-       $model = new Jogos();
-       
-       $insert = $model->insert($dados);
-       return redirect()->to(base_url('/tabela_jogos'));
+        $model = new Jogos();
+
+        $insert = $model->insert($dados);
+        return redirect()->to(base_url('/tabela_jogos'));
     }
 
-    public function apagar_jogos($id)
+    public function confimacao_apagar_jogo($id)
     {
         $model = new Jogos();
 
-        $dados = $model->find($id); //procura se o id que recebeu existe na base de dados
+        $db = db_connect();
 
-        if($model->delete($dados)) //se eliminar o jogo
-        {
-            return redirect()->to(base_url('/tabela_jogos'));
-        }
-        else
-        {
-            die("erro ao eliminar jogo");
-            return redirect()->to(base_url('/tabela_jogos'));
-        }
+        $query= $db->query("Select e.nome_equipa , j.* from equipas e, jogos j where j.id_equipa = e.id_equipa and j.id_jogo = '$id'");
+        $jogo = $query->getRow(); //O get Row  retorna uma única linha de resultado. Se sua consulta tiver mais de uma linha, ela retornará apenas a primeira linha.
+        
+
+        if (isset($jogo)) {
+            $equipa =  $jogo->nome_equipa;
+            $adversario  = $jogo->adversario;
+            
+        }     
+
+       
+        echo view('head');
+        echo view('admin/pagina_apagar_jogo', ['equipa' => $equipa ,'adversario'=>$adversario ,'id' => $id]);
+    }
+
+    public function apagar_jogo($id)
+    {
+        $dados = [
+            'estado' => 'inativo'
+        ];
+
+        $db = db_connect();
+
+        $db->table('jogos')->where('id_jogo', $id)->update($dados);
+
+        return redirect()->to(base_url('/tabela_jogos'));
+
     }
 
     public function pagina_atualizar_equipa($id)
     {
         if ((bool)session()->logado != true) {
             return redirect()->to(base_url('/login'));
-        } else {      
+        } else {
             $model = new Equipas();
 
             $data = $model->find($id); //procura a equipa na base de dados
 
             echo view('head');
             echo view('Admin/header2');
-            echo view('admin/atualizar_equipa',['id'=>$data['id_equipa'],'nome'=>$data['nome_equipa']]);
+            echo view('admin/atualizar_equipa', ['id' => $data['id_equipa'], 'nome' => $data['nome_equipa']]);
             echo view('footer');
         }
     }
@@ -551,9 +609,9 @@ class Admin extends BaseController
 
         $model = new Equipas();
 
-        $equipa = $model->where('nome_equipa',$nome)->first(); //procura a equipa na base de dados
+        $equipa = $model->where('nome_equipa', $nome)->first(); //procura a equipa na base de dados
 
-        
+
 
         $classificaçao = $this->request->getPost('classificacao-column');
 

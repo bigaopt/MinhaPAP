@@ -1,7 +1,7 @@
 <div class="content-wrapper container">
     <div class="page-content">
         <section class="row">
-            <div class="col-12 ">
+            <div class="col-10" style="margin-left:6em;">
                 <div class="row">
                     <div class="col-12">
                         <div class="card" >

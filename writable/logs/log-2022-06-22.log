@@ -1,0 +1,389 @@
+CRITICAL - 2022-06-22 03:43:38 --> Attempt to read property "nome_jogador" on array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogador.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\Admini...', 18)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(126): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogador('70')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 05:29:04 --> syntax error, unexpected token "("
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Admini...')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#8 {main}
+CRITICAL - 2022-06-22 05:38:48 --> Undefined variable $teste
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\tabela_jogos.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Admini...', 25)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/tabela_jo...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(508): view('admin/tabela_jo...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_tabela_jogos()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 05:39:08 --> Undefined property: stdClass::$id_equipa
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\tabela_jogos.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\Users\\Admini...', 34)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/tabela_jo...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(508): view('admin/tabela_jo...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_tabela_jogos()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 05:40:40 --> Object of class App\Models\Equipas could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(570): view('admin/pagina_ap...', Array)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-22 05:42:25 --> Object of class App\Models\Equipas could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(570): view('admin/pagina_ap...', Array)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-22 05:43:08 --> Cannot use object of type App\Models\Equipas as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-22 05:43:18 --> Object of class App\Models\Equipas could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(571): view('admin/pagina_ap...', Array)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-22 05:43:40 --> Undefined variable $adversario
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogo.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Admini...', 14)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(571): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 05:43:49 --> syntax error, unexpected single-quoted string " ? ", expecting "," or ";"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#2 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(571): view('admin/pagina_ap...', Array)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#8 {main}
+CRITICAL - 2022-06-22 05:44:13 --> Undefined variable $adversario
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogo.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Admini...', 14)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(571): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 05:45:00 --> Object of class App\Models\Equipas could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(571): view('admin/pagina_ap...', Array)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-22 05:51:05 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(573): view('admin/pagina_ap...', Array)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#9 {main}
+CRITICAL - 2022-06-22 05:51:46 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-22 05:56:19 --> Array to string conversion
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogo.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\Users\\Admini...', 14)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(571): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 05:56:42 --> Undefined array key "nome_equipa"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(569): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Admini...', 569)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-22 05:57:37 --> Array to string conversion
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogo.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\Users\\Admini...', 15)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(571): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('15')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 06:06:25 --> Undefined array key "nome_equipa"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(564): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Admini...', 564)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-22 06:06:34 --> Undefined array key "nome_equipa"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(564): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Admini...', 564)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-22 06:06:34 --> Undefined array key "nome_equipa"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(564): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Admini...', 564)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-22 06:06:44 --> Undefined array key "adversario"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(565): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Admini...', 565)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#6 {main}
+CRITICAL - 2022-06-22 06:08:27 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-22 06:09:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-22 06:10:28 --> Cannot use object of type stdClass as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-22 06:10:52 --> Cannot use object of type stdClass as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-22 06:11:31 --> Cannot use object of type stdClass as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-22 06:11:33 --> Cannot use object of type stdClass as array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+CRITICAL - 2022-06-22 06:12:34 --> Object of type stdClass is not callable
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#5 {main}
+ERROR - 2022-06-22 06:22:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+CRITICAL - 2022-06-22 06:22:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `Select`...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `Select`...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `Select`...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `Select`...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(562): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#11 {main}
+ERROR - 2022-06-22 06:25:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+CRITICAL - 2022-06-22 06:25:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `Select`...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `Select`...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `Select`...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `Select`...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(564): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+ERROR - 2022-06-22 06:25:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+CRITICAL - 2022-06-22 06:25:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `Select`...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `Select`...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `Select`...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `Select`...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(564): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+ERROR - 2022-06-22 06:25:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+CRITICAL - 2022-06-22 06:25:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `Select`...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `Select`...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `Select`...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `Select`...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(564): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+ERROR - 2022-06-22 06:25:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+CRITICAL - 2022-06-22 06:25:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `j`.* from equipas `e`, jogos j where j.id_equipa = e.id_equi...' at line 1
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `Select`...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `Select`...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `Select`...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `Select`...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(564): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+ERROR - 2022-06-22 06:26:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `jogos`.* from `equipas`, jogos  where jogos.id_equipa = eequ...' at line 1
+CRITICAL - 2022-06-22 06:26:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nome_equipa`, `jogos`.* from `equipas`, jogos  where jogos.id_equipa = eequ...' at line 1
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `Select`...', 0)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `Select`...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `Select`...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `Select`...', Array, false)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(564): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 06:29:51 --> Attempt to read property "adversario" on array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogo.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\Admini...', 14)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(566): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 06:30:02 --> Attempt to read property "nome_equipa" on array
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogo.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\Admini...', 15)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(566): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 06:31:10 --> Undefined array key "nome_equipa"
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogo.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\Admini...', 15)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(566): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-22 06:39:50 --> Undefined variable $equipa
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\pagina_apagar_jogo.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Admini...', 14)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/pagina_ap...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(573): view('admin/pagina_ap...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->confimacao_apagar_jogo('14')
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}

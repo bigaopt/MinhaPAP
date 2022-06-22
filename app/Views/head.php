@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')?>">
     <link href="<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')?>">
-    <!-- Links  css multiplo select-->
+    <!-- Links  css sweet alert select-->
+    <link rel="stylesheet" href="<?php echo base_url('assets/SweetAlert/dist/sweetalert2.min.css')?>">
 
     <link rel="shortcut icon" href="<?php echo base_url('Img/icon-gdm.png')?>" type="image/png">
 

@@ -20,7 +20,7 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="cc">Classificação</label>
-                                        <input type="text" id="last-name-column" class="form-control" placeholder="Classificação atual" name="classificacao-column">
+                                        <input type="text" id="last-name-column" class="form-control" placeholder="Classificação atual" name="classificacao-column" required>
                                     </div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-end">
