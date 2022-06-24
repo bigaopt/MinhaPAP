@@ -2,7 +2,7 @@
     <div class="card-header">
         <br><h4 class="d-inline"> Tabela das equipas </h4>
         <div class="btn-group mb-3 float-right d-inline" role="group" aria-label="Basic example" style="float:right;">
-           <a href="/inserir_equipa" ><button type="button" class="btn btn-danger">Inserir equipa</button></a>
+           <a href="<?php echo base_url('/inserir_equipa'); ?>" ><button type="button" class="btn btn-danger">Inserir equipa</button></a>
         </div>
     </div>
     <div class="card-body ">

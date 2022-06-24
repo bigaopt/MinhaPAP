@@ -65,10 +65,7 @@ $routes->get('apagar_equipas/(:num)','Admin::apagar_equipa/$1'); //apagar equipa
 $routes->get('atualizar_equipa/(:num)','Admin::pagina_atualizar_equipa/$1');//atualizar equipa
 $routes->get('apagar_jogo/(:num)','Admin::apagar_jogo/$1'); //apagar jogos
 
-$routes->get('comfirmaçao_jogador/(:num)','Admin::confimacao_apagar_jogador/$1');//pagina modal jogador
-$routes->get('confirmaçao_tecnico/(:num)','Admin::confimacao_apagar_tecnico/$1');//pagina modal tecnico
-$routes->get('confirmaçao_equipa/(:num)','Admin::confimacao_apagar_equipa/$1');//pagina modal equipa
-$routes->get('confirmaçao_jogo/(:num)','Admin::confimacao_apagar_jogo/$1');//pagina modal jogo
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

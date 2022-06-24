@@ -1,0 +1,64 @@
+ERROR - 2022-06-24 08:42:56 --> Error connecting to the database: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+CRITICAL - 2022-06-24 08:42:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\app\Models\Jogos.php(29): CodeIgniter\Database\BaseConnection->query('select j.dia,j....')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Main.php(13): App\Models\Jogos->mostrar_jogos_mais_recentes()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Main->index()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#8 {main}
+ERROR - 2022-06-24 08:46:01 --> Error connecting to the database: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+CRITICAL - 2022-06-24 08:46:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\Administrador\Documents\Projeto_PAP\app\Models\Jogos.php(29): CodeIgniter\Database\BaseConnection->query('select j.dia,j....')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Main.php(13): App\Models\Jogos->mostrar_jogos_mais_recentes()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Main->index()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#8 {main}
+CRITICAL - 2022-06-24 09:28:33 --> Undefined variable $id
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\tabela_jogadores.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Admini...', 84)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/tabela_jo...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(366): view('admin/tabela_jo...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_tabela_jogadores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-24 09:28:47 --> Undefined variable $id
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\tabela_jogadores.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\Admini...', 84)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/tabela_jo...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(366): view('admin/tabela_jo...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_tabela_jogadores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}
+CRITICAL - 2022-06-24 10:24:28 --> Array to string conversion
+#0 C:\Users\Administrador\Documents\Projeto_PAP\app\Views\Admin\tabela_jogadores.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\Users\\Admini...', 39)
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(210): include('C:\\Users\\Admini...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\Common.php(1089): CodeIgniter\View\View->render('admin/tabela_jo...', Array, true)
+#4 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(352): view('admin/tabela_jo...', Array)
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_tabela_jogadores()
+#6 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#10 {main}

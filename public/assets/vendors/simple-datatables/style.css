@@ -77,13 +77,13 @@
 
 .dataTable-table > tfoot > tr > th {
 	vertical-align: bottom;
-	text-align: left;
+	text-align: center;
 	border-top: 1px solid #d9d9d9;
 }
 
 .dataTable-table th {
 	vertical-align: bottom;
-	text-align: left;
+	text-align: center;
 }
 
 .dataTable-table th a {

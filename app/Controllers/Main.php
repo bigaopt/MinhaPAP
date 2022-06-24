@@ -103,7 +103,4 @@ class Main extends BaseController
         echo view('Pages/escaloes/juniores', ['jogadores' => $dados, 'equipa' => $dados_equipa, 'jogos' => $dados_jogos]);
         echo view('footer');
     }
-
-   
-
 }

@@ -1,5 +1,7 @@
 var clubeApp = clubeApp || {};
 
+
+
 clubeApp.home = function () {
 
     var init = function () {
@@ -8,12 +10,10 @@ clubeApp.home = function () {
         });
     };
 
+   
     
-
-
     return {
         init: init,
-        jogador: delete_jogador,
-    }
+    };
 
 }();

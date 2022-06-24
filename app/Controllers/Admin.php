@@ -115,20 +115,6 @@ class Admin extends BaseController
 
         return redirect()->to(base_url('/admin'));
     }
-
-    public function confimacao_apagar_jogador($id)
-    {
-
-        $model = new Jogadores();
-
-        $jogador = $model->find($id);
-
-        $nome = $jogador['nome_jogador'];
-
-        echo view('head');
-        echo view('admin/pagina_apagar_jogador', ['nome' => $nome, 'id' => $id]);
-    }
-
     public function apagar_jogadores($id)
     {
 
@@ -152,7 +138,7 @@ class Admin extends BaseController
 
             $model_equipa = new Equipas();
 
-            $nomes_jogadores = $model->buscar_nomes_jogadores();
+            $nomes_jogadores = $model->buscar_jogadores_nao_associados();
 
             $nome_equipas = $model_equipa->buscar_nomes_equipas();
 
@@ -323,7 +309,7 @@ class Admin extends BaseController
 
             $model_equipa = new Equipas();
 
-            $nomes_tecnicos = $model->buscar_nome_tecnico();
+            $nomes_tecnicos = $model->buscar_tecnico_nao_associado();
 
             $nome_equipas = $model_equipa->buscar_nomes_equipas();
 

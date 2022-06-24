@@ -3,8 +3,8 @@
         <br>
         <h4 class="d-inline"> Tabela Técnicos </h4>
         <div class="btn-group mb-3 float-right d-inline" role="group" aria-label="Basic example" style="float:right;">
-            <a href="/inserir_tecnico"><button type="button" class="btn btn-danger">Inserir técnico</button></a>
-            <a href="/associar_tecnico"><button type="button" class="btn btn-danger">Associar técnico a uma equipa</button></a>
+            <a href="<?php echo base_url('/inserir_tecnico');?>"><button type="button" class="btn btn-danger">Inserir técnico</button></a>
+            <a href="<?php echo base_url('/associar_tecnico');?>"><button type="button" class="btn btn-danger">Associar técnico a uma equipa</button></a>
         </div>
     </div>
     <div class="card-body ">

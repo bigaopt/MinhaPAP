@@ -3,8 +3,8 @@
         <br>
         <h4 class="d-inline"> Tabela jogadores </h4>
         <div class="btn-group mb-3 float-right d-inline" role="group" aria-label="Basic example" style="float:right;">
-            <a href="/inserir_jogador"><button type="button" class="btn btn-danger">Inserir jogador</button></a>
-            <a href="/associar_jogadores"><button type="button" class="btn btn-danger">Associar jogador a uma equipa</button></a>
+            <a href="<?php echo base_url('/inserir_jogador'); ?>"><button type="button" class="btn btn-danger">Inserir jogador</button></a>
+            <a href="<?php echo base_url('/associar_jogadores'); ?>"><button type="button" class="btn btn-danger">Associar jogador a uma equipa</button></a>
         </div>
     </div>
     <div class="card-body ">
@@ -36,7 +36,7 @@
                         <td><?= $jogador->telefone; ?></td>
 
                         <td><button class="btn btn-dark"> <a href="<?= base_url('/atualizar_jogadores/' . $jogador->id_jogador) ?>"><i class="bi bi-pencil-fill"></i><a></button></td>
-                        <td><button class="btn btn-dark"> <a href="<?= base_url('/comfirmaçao_jogador/' . $jogador->id_jogador) ?>"><i class="bi bi-trash-fill"></i><a></button></td>
+                        <td><button class="btn btn-dark" onclick="apagar_jogador('<?php echo $jogador->id_jogador ?>','<?php echo $jogador->nome_jogador ?>')"> <i class="bi bi-trash-fill"></i> </button></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
@@ -50,4 +50,43 @@
     let table1 = document.querySelector('#table1');
     let dataTable = new simpleDatatables.DataTable(table1);
 
+
+    function apagar_jogador(id,nome) {
+        
+    const xhttp = new XMLHttpRequest();
+
+    var id= id; //id que foi enviado na funçao
+
+    var nome = nome;
+
+        Swal.fire({
+            title: 'Voce têm a certeza que deseja eliminar o jogador ' + nome + '?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#5cb85c',
+            cancelButtonColor: '#f90000',
+            confirmButtonText: 'Apagar!'
+        }).then((result) => {
+
+            if (result.isConfirmed) {
+
+                window.location.replace('/apagar_jogadores/' + id ); //envia para a funçao apagar jogador e volta para aqui e amostra o swal
+
+                Swal.fire(
+
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success',
+                )
+
+            } else {
+                Swal.fire(
+                    'Cancelado!',
+                    'Voce cancelou a eliminaçao.',
+                    'error'
+                )
+            }
+
+        })
+    }
 </script>

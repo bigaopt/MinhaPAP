@@ -102,19 +102,23 @@ document.getElementById('password').addEventListener('click', async (e) => {
   
 })
 document.getElementById('textarea').addEventListener('click', async (e) => {
-    const { value: text } = await Swal.fire({
-        input: 'textarea',
-        inputLabel: 'Message',
-        inputPlaceholder: 'Type your message here...',
-        inputAttributes: {
-          'aria-label': 'Type your message here'
-        },
-        showCancelButton: true
-      })
-      
-      if (text) {
-        Swal.fire(text)
-      }
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, delete it!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    }
+  })
 })
 document.getElementById('select').addEventListener('click', async (e) => {
     const { value: fruit } = await Swal.fire({

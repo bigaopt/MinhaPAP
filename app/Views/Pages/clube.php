@@ -148,7 +148,7 @@
                         </div>
                         <div class="card-content">
                             <div class="card-body">
-                                <form class="form form-horizontal" id="form" method="POST">
+                                <form class="form form-horizontal" method="POST" action="">
                                     <div class="form-body">
                                         <div class="row">
                                             <div class="col-md-2">
@@ -157,7 +157,7 @@
                                             <div class="col-md-10">
                                                 <div class="form-group has-icon-left">
                                                     <div class="position-relative">
-                                                        <input type="text" class="form-control" placeholder="Nome"  required id="nome">
+                                                        <input type="text" class="form-control" placeholder="Nome" required id="nome">
                                                         <div class="form-control-icon">
                                                             <i class="bi bi-person"></i>
                                                         </div>
@@ -206,7 +206,7 @@
                                             </div>
                                             
                                             <div class="col-12 d-flex justify-content-end">
-                                                <button id="enviar" class="btn btn-primary me-1 mb-1">Submit</button>
+                                                <button type="submit" id="enviar" class="btn btn-primary me-1 mb-1">Enviar</button>
                                             </div>
                                         </div>
                                     </div>

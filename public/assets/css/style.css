@@ -39,16 +39,16 @@ i{
    color:white;
 }
 /*------------------------------- Icons Redes Sociais -------------------------------------------*/
-.icon-facebook{
+#icon-facebook{
     color:#3b5998;
 }
-.icon-facebook:hover{
+#icon-facebook:hover{
     color: #3b5998;
 }
-.icon-instagram{
+#icon-instagram{
     color:#E1306C;
  }
-.icon-instagram:hover{
+#icon-instagram:hover{
    color:#E1306C;
 }
 .menu-admin{

@@ -92,15 +92,6 @@
                             </a>
                         </li>
 
-                        <li class="menu-item  ">
-                            <a href="loja" class='menu-link'>
-                                <i class="bi bi-shop-window" style="color:white;"></i>
-                                <span>Loja</span>
-                            </a>
-                        </li>
-
-
-
                     </ul>
                 </div>
             </nav>

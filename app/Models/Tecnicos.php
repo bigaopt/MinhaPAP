@@ -8,16 +8,18 @@ class Tecnicos extends Model
 {
     protected $table = 'tecnicos';
     protected $primaryKey = 'id_tecnico';
-    
-    protected $AllowFields = [  'nome_tecnico',
-                                'cc_tecnico',
-                                'data_nascimento',
-                                'genero', 
-                                'nacionalidade',
-                                'morada',
-                                'cod_Postal',
-                                'telefone',
-                                'cargo'];
+
+    protected $AllowFields = [
+        'nome_tecnico',
+        'cc_tecnico',
+        'data_nascimento',
+        'genero',
+        'nacionalidade',
+        'morada',
+        'cod_Postal',
+        'telefone',
+        'cargo'
+    ];
 
     public function buscar_nome_tecnico()
     {
@@ -32,8 +34,17 @@ class Tecnicos extends Model
     {
         $db = db_connect();
 
-        $query = $db->query("select * from tecnicos where tecnicos.estado like 'Ativo' "); 
+        $query = $db->query("select * from tecnicos where tecnicos.estado like 'Ativo' ");
 
         return $query->getResult();
-   }
+    }
+
+    public function buscar_tecnico_nao_associado()
+    {
+        $db = db_connect();
+
+        $query = $db->query("SELECT tecnicos.* FROM tecnicos left JOIN tecnicos_equipa ON tecnicos.id_tecnico = tecnicos_equipa.id_tecnico WHERE tecnicos_equipa.id_equipa IS NULL");
+
+        return $query->getResult();
+    }
 }
