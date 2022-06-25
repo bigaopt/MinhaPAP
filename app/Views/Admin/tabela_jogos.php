@@ -32,6 +32,7 @@
                         <td><?= $jogo->tipo_resultado; ?></td>
 
                         <td><button class="btn btn-dark"> <a href="<?= base_url('/confirmaçao_jogo/' . $jogo->id_jogo) ?>"><i class="bi bi-trash-fill"></i><a></button></td>
+                        <td><button class="btn btn-dark" onclick="apagar_jogo('<?php echo $jogo->id_jogo ?>','<?php echo $jogo->nome_equipa ?>','<?php echo $jogo->adversario ?>')"> <i class="bi bi-trash-fill"></i> </button></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
@@ -44,4 +45,43 @@
     // Simple Datatable
     let table1 = document.querySelector('#table1');
     let dataTable = new simpleDatatables.DataTable(table1);
+
+    function apagar_jogo(id,nome,adversario) {
+        
+        var id= id; //id que foi enviado na funçao
+    
+        var nome = nome;
+
+        var adversario = adversario;
+    
+            Swal.fire({
+                title: 'Voce têm a certeza que deseja eliminar o jogo do ' + nome + ' contra  o '+ adversario +' ?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#5cb85c',
+                cancelButtonColor: '#f90000',
+                confirmButtonText: 'Apagar!'
+            }).then((result) => {
+    
+                if (result.isConfirmed) {
+    
+                    window.location.replace('/apagar_jogo/' + id ); //envia para a funçao apagar jogador e volta para aqui e amostra o swal
+    
+                    Swal.fire(
+    
+                        'Deleted!',
+                        'Jogador eliminado com sucesso.',
+                        'success',
+                    )
+    
+                } else {
+                    Swal.fire(
+                        'Cancelado!',
+                        'Ação cancelada com sucesso.',
+                        'error'
+                    )
+                }
+    
+            })
+        }
 </script>

@@ -39,7 +39,7 @@
                         <td><?= $tecnico->cargo; ?></td>
                         
                         <td><button class="btn btn-dark"><a href="<?= base_url('/atualizar_tecnico/'.$tecnico->id_tecnico) ?>"><i class="bi bi-pencil-fill"></i></a></button></td>
-                        <td><button class="btn btn-dark"><a href="<?= base_url('/confirmaçao_tecnico/'.$tecnico->id_tecnico) ?>"><i class="bi bi-trash-fill"></i></a></button></td>
+                        <td><button class="btn btn-dark" onclick="apagar_tecnico('<?php echo $tecnico->id_tecnico ?>','<?php echo $tecnico->nome_tecnico ?>')"> <i class="bi bi-trash-fill"></i> </button></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
@@ -52,4 +52,41 @@
     // Simple Datatable
     let table1 = document.querySelector('#table1');
     let dataTable = new simpleDatatables.DataTable(table1);
+
+    function apagar_tecnico(id,nome) {
+            
+        var id= id; //id que foi enviado na funçao
+    
+        var nome = nome;
+    
+            Swal.fire({
+                title: 'Voce têm a certeza que deseja eliminar o técnico ' + nome + '?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#5cb85c',
+                cancelButtonColor: '#f90000',
+                confirmButtonText: 'Apagar!'
+            }).then((result) => {
+    
+                if (result.isConfirmed) {
+    
+                    window.location.replace('/apagar_tecnico/' + id ); //envia para a funçao apagar jogador e volta para aqui e amostra o swal
+    
+                    Swal.fire(
+    
+                        'Deleted!',
+                        'Técnico eliminado com sucesso.',
+                        'success',
+                    )
+    
+                } else {
+                    Swal.fire(
+                        'Cancelado!',
+                        'Ação cancelada com sucesso.',
+                        'error'
+                    )
+                }
+    
+            })
+    }
 </script>

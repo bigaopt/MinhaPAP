@@ -272,18 +272,6 @@ class Admin extends BaseController
         return redirect()->to(base_url('/tabela_tecnicos'));
     }
 
-    public function confimacao_apagar_tecnico($id)
-    {
-        $model = new Tecnicos();
-
-        $tecnico = $model->find($id);
-
-        $nome = $tecnico['nome_tecnico'];
-
-        echo view('head');
-        echo view('admin/pagina_apagar_tecnico', ['nome' => $nome, 'id' => $id]);
-    }
-
     public function apagar_tecnico($id) //recebe o id do URL
     {
         $model = new Tecnicos();
@@ -384,18 +372,6 @@ class Admin extends BaseController
             echo view('admin/tabela_equipas', ['equipas' => $equipas]);
             echo view('footer');
         }
-    }
-
-    public function confimacao_apagar_equipa($id)
-    {
-        $model = new Equipas();
-
-        $equipa = $model->find($id);
-
-        $nome = $equipa['nome_equipa'];
-
-        echo view('head');
-        echo view('admin/pagina_apagar_equipa', ['nome' => $nome, 'id' => $id]);
     }
 
     public function apagar_equipa($id)
@@ -536,27 +512,6 @@ class Admin extends BaseController
 
         $insert = $model->insert($dados);
         return redirect()->to(base_url('/tabela_jogos'));
-    }
-
-    public function confimacao_apagar_jogo($id)
-    {
-        $model = new Jogos();
-
-        $db = db_connect();
-
-        $query= $db->query("Select e.nome_equipa , j.* from equipas e, jogos j where j.id_equipa = e.id_equipa and j.id_jogo = '$id'");
-        $jogo = $query->getRow(); //O get Row  retorna uma única linha de resultado. Se sua consulta tiver mais de uma linha, ela retornará apenas a primeira linha.
-        
-
-        if (isset($jogo)) {
-            $equipa =  $jogo->nome_equipa;
-            $adversario  = $jogo->adversario;
-            
-        }     
-
-       
-        echo view('head');
-        echo view('admin/pagina_apagar_jogo', ['equipa' => $equipa ,'adversario'=>$adversario ,'id' => $id]);
     }
 
     public function apagar_jogo($id)

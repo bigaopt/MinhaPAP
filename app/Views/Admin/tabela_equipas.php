@@ -31,7 +31,7 @@
                         <td><?= $equipa->classificacao; ?></td>
 
                         <td><button class="btn btn-dark"> <a href="<?= base_url('/atualizar_equipa/' . $equipa->id_equipa) ?>"><i class="bi bi-pencil-fill"></i><a></button></td>
-                        <td><button class="btn btn-dark"> <a href="<?= base_url('/confirmaçao_equipa/' . $equipa->id_equipa) ?>"><i class="bi bi-trash-fill"></i><a></button></td>
+                        <td><button class="btn btn-dark" onclick="apagar_equipa('<?php echo $equipa->id_equipa ?>','<?php echo $equipa->nome_equipa ?>')"> <i class="bi bi-trash-fill"></i> </button></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
@@ -44,4 +44,41 @@
     // Simple Datatable
     let table1 = document.querySelector('#table1');
     let dataTable = new simpleDatatables.DataTable(table1);
+
+    function apagar_equipa(id,nome) {
+        
+        var id= id; //id que foi enviado na funçao
+    
+        var nome = nome;
+    
+            Swal.fire({
+                title: 'Voce têm a certeza que deseja eliminar a equipa ' + nome + '?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#5cb85c',
+                cancelButtonColor: '#f90000',
+                confirmButtonText: 'Apagar!'
+            }).then((result) => {
+    
+                if (result.isConfirmed) {
+    
+                    window.location.replace('/apagar_equipas/' + id ); //envia para a funçao apagar jogador e volta para aqui e amostra o swal
+    
+                    Swal.fire(
+    
+                        'Deleted!',
+                        'Equipa eliminado com sucesso.',
+                        'success',
+                    )
+    
+                } else {
+                    Swal.fire(
+                        'Cancelado!',
+                        'Ação cancelada com sucesso.',
+                        'error'
+                    )
+                }
+    
+            })
+        }
 </script>

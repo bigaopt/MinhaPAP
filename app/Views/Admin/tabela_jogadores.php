@@ -53,8 +53,6 @@
 
     function apagar_jogador(id,nome) {
         
-    const xhttp = new XMLHttpRequest();
-
     var id= id; //id que foi enviado na funçao
 
     var nome = nome;
@@ -75,14 +73,14 @@
                 Swal.fire(
 
                     'Deleted!',
-                    'Your file has been deleted.',
+                    'Jogador eliminado com sucesso.',
                     'success',
                 )
 
             } else {
                 Swal.fire(
                     'Cancelado!',
-                    'Voce cancelou a eliminaçao.',
+                    'Ação cancelada com sucesso.',
                     'error'
                 )
             }
