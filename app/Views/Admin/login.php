@@ -36,21 +36,20 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-4" type="text" name="inputUsername" placeholder="Username">
+                                    <input class="input--style-4" type="text" name="inputUsername" placeholder="Utilizador">
                                 </div>
                             </div>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="from-group">
-                                    <input class="input--style-4" type="password" name="inputPassword" placeholder="Password">
+                                    <input class="input--style-4" type="password" name="inputPassword" placeholder="Palavra passe">
                                 </div>
                             </div>
                         </div>
                         <div class="p-t-15 ">
                             <button class="btn btn--radius-2 btn--blue">LOGIN</button>
                         </div> 
-                        <a href="/inicio" class="button-admin" >voltar Menu</a>
                     </form>                
                     <?php $msg = session()->getFlashData('msg') ?>
                     <?php if(!empty($msg)) : ?>

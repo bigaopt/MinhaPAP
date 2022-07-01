@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card card-tabelas">
     <div class="card-header">
         <br>
         <h4 class="d-inline"> Tabela jogadores </h4>
@@ -50,7 +50,7 @@
     let table1 = document.querySelector('#table1');
     let dataTable = new simpleDatatables.DataTable(table1);
 
-
+    
     function apagar_jogador(id,nome) {
         
     var id= id; //id que foi enviado na funçao

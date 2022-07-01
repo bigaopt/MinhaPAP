@@ -38,14 +38,7 @@ class Main extends BaseController
         echo view('footer');
     }
 
-    public function loja()
-    {
-        echo view('head');
-        echo view('header');
-        echo view('Pages/loja');
-        echo view('footer');
-    }
-
+    
     public function seniores()
     {
         $jogadores = new \App\Models\Jogadores();

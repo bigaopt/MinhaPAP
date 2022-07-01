@@ -81,6 +81,12 @@
                                 <span>Jogos</span>
                             </a>
                         </li>
+                        <li class="menu-item active ">
+                            <a href="/tabela_clubes" class='menu-link'>
+                                <i class="bi bi-person" style="color:white;"></i>
+                                <span>Clubes</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

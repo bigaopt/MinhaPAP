@@ -33,7 +33,7 @@ class Jogadores extends Model
         $db = db_connect();
 
         //Mostra os jogadores que nao estão associados a uma equipa
-        $query = $db->query("SELECT jogadores.* FROM jogadores left JOIN jogadores_equipa ON jogadores.id_jogador = jogadores_equipa.id_jogador  WHERE jogadores_equipa.id_equipa IS NULL");
+        $query = $db->query("SELECT jogadores.* FROM jogadores left JOIN jogadores_equipa ON jogadores.id_jogador = jogadores_equipa.id_jogador  WHERE jogadores_equipa.id_equipa IS NULL and jogadores.estado like 'ativo'");
 
         return $query->getResult();
     }

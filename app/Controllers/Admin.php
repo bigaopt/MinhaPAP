@@ -10,6 +10,8 @@ use \App\Models\Tecnicos;
 
 use \App\Models\Jogos;
 
+use \App\Models\Clubes;
+
 class Admin extends BaseController
 {
 
@@ -393,13 +395,13 @@ class Admin extends BaseController
             'estado' => 'inativo'
         ];
 
-        if ($query->getRow()->equipas <= 1) //se tiver mais que uma equipa
+        if ($query->getRow()->equipas <= 1) //se tiver menos ou so uma equipa
         {
             $db->table('equipas')->where('id_equipa', $id)->update($estado); //elimina a equipa
             $apagar_escalao = $db->query("UPDATE escaloes set escaloes.estado = 'inativo' where  escaloes.nome_escalao like '$escalao' "); //muda o estado para inativo o escalao da equipa que foi apagada
             return redirect()->to(base_url('/tabela_equipas'));
         } else {
-            $db->table('equipas')->where('id_equipas', $id)->update($estado); //elimina a equipa
+            $db->table('equipas')->where('id_equipa', $id)->update($estado); //elimina a equipa
             return redirect()->to(base_url('/tabela_equipas'));
         }
     }
@@ -437,7 +439,7 @@ class Admin extends BaseController
 
         $db = db_connect();
         if ($db->table('equipas')->insert($dados_equipa)) {
-            $query = $db->query("SELECT escaloes.nome_escalao, escaloes.estado from escaloes join equipas on equipas.nome_escalao = escaloes.nome_escalao where equipas.nome_equipa like'$nome'"); //procura o estado da equipa que acabei de inserir
+            $query = $db->query("SELECT escaloes.nome_escalao, escaloes.estado from escaloes join equipas on equipas.nome_escalao = escaloes.nome_escalao where equipas.nome_equipa like'$nome'"); //procura o estado do escalao da equipa que acabei de inserir
 
             $estado = $query->getRowArray();
 
@@ -478,12 +480,15 @@ class Admin extends BaseController
         } else {
 
             $model = new Equipas();
+            $model_clube = new Clubes();
 
             $equipas = $model->buscar_nomes_equipas();
 
+            $clubes = $model_clube->buscar_todos_clubes();
+
             echo view('head');
             echo view('Admin/header2');
-            echo view('admin/inserir_jogo', ['equipas' => $equipas]);
+            echo view('admin/inserir_jogo', ['equipas' => $equipas,'clubes'=>$clubes]);
             echo view('footer');
         }
     }
@@ -495,8 +500,8 @@ class Admin extends BaseController
         $local = $this->request->getPost('local-column');
         $equipa = $this->request->getPost('equipa-column');
         $adversario = $this->request->getPost('adversario-column');
-        $resultado = $this->request->getPost('resultado-column');
-        $tipo_resultado = $this->request->getPost('tipo-resultado');
+        $resultado = $this->request->getPost('tipo-resultado');
+        
 
         $dados = [
             'hora' => $hora,
@@ -505,9 +510,8 @@ class Admin extends BaseController
             'id_equipa' => $equipa,
             'adversario' => $adversario,
             'resultado' => $resultado,
-            'tipo_resultado' => $tipo_resultado
         ];
-
+        
         $model = new Jogos();
 
         $insert = $model->insert($dados);
@@ -564,5 +568,65 @@ class Admin extends BaseController
         $db->table('equipas')->where('id_equipa', $equipa['id_equipa'])->update($dados);
 
         return redirect()->to(base_url('/tabela_equipas'));
+    }
+
+    public function pagina_tabela_clubes ()
+    {
+        if ((bool)session()->logado != true) {
+            return redirect()->to(base_url('/login'));
+        } else {
+            
+            $model = new Clubes();
+
+            $clubes = $model->buscar_todos_clubes();
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/tabela_clubes',['clubes'=>$clubes]);
+            echo view('footer');
+        }
+    }
+
+    public function pagina_inserir_clube()
+    {
+        if ((bool)session()->logado != true) {
+            return redirect()->to(base_url('/login'));
+        } else {
+
+            echo view('head');
+            echo view('Admin/header2');
+            echo view('admin/inserir_clube');
+            echo view('footer');
+        }
+    }
+
+    public function inserir_clube()
+    {
+        $nome = $this->request->getPost('clube-column');
+
+        $model = new Clubes();
+
+        $dados = [
+            'nome_clube' => $nome,
+            'estado' =>'ativo'
+        ];
+
+        $db = db_connect();
+        $db->table('clubes')->insert($dados);
+        
+        return redirect()->to(base_url('/tabela_clubes'));
+    }
+
+    public function apagar_clube($id)
+    {
+        $dados = [
+            'estado' => 'inativo'
+        ];
+
+        $db = db_connect();
+
+        $db->table('clubes')->where('id_clube', $id)->update($dados);
+
+        return redirect()->to(base_url('/tabela_clubes'));
     }
 }

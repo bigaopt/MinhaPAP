@@ -43,7 +43,7 @@ class Tecnicos extends Model
     {
         $db = db_connect();
 
-        $query = $db->query("SELECT tecnicos.* FROM tecnicos left JOIN tecnicos_equipa ON tecnicos.id_tecnico = tecnicos_equipa.id_tecnico WHERE tecnicos_equipa.id_equipa IS NULL");
+        $query = $db->query("SELECT tecnicos.* FROM tecnicos left JOIN tecnicos_equipa ON tecnicos.id_tecnico = tecnicos_equipa.id_tecnico WHERE tecnicos_equipa.id_equipa IS NULL and tecnicos.estado like'ativo' ");
 
         return $query->getResult();
     }

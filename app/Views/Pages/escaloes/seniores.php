@@ -253,7 +253,6 @@
                                                         <th>Nome Equipa</th>
                                                         <th>Adversário</th>
                                                         <th>Resultado</th>
-                                                        <th>Tipo de Resultado</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -265,7 +264,6 @@
                                                             <td><?= $jogo->nome_equipa; ?></td>
                                                             <td><?= $jogo->adversario; ?></td>
                                                             <td><?= $jogo->resultado; ?></td>
-                                                            <td><?= $jogo->tipo_resultado; ?></td>
                                                         </tr>
                                                     <?php endforeach ?>
                                                 </tbody>

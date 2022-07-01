@@ -1,7 +1,7 @@
 <section id="multiple-column-form">
     <div class="row match-height">
         <div class="col-12">
-            <div class="card">
+            <div class="card card-tabelas">
                 <div class="card-header">
                     <h4 class="card-title">Inserir Jogo</h4>
                 </div>
@@ -12,19 +12,19 @@
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="hora">Hora</label>
-                                        <input type="time"  class="form-control"  name="hora-column" required>
+                                        <input type="time" class="form-control" name="hora-column" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
-                                        <label for="data">Data</label>
+                                        <label for="data">Dia</label>
                                         <input type="date" id="data-column" class="form-control" placeholder="Data" name="data-column" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="local">Local</label>
-                                        <input type="text" id="last-name-column" class="form-control" placeholder="Local do jogo" name="local-column"  required>
+                                        <input type="text" id="last-name-column" class="form-control" placeholder="Local do jogo" name="local-column" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12">
@@ -38,17 +38,14 @@
                                     </fieldset>
                                 </div>
                                 <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="adversario">Adversário</label>
-                                        <input type="text" id="country-floating" class="form-control" name="adversario-column" placeholder="Equipa adversária" required>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="resultado">Resultado</label>
-                                        <input type="text" id="company-column" class="form-control" name="resultado-column" placeholder="Resultado" required pattern="^(?[0-9])[0-9]-(?[0-9])[0-9]$" required>
-                                    </div>
+                                    <fieldset class="form-group">
+                                        <label for="equipa">Adversario</label>
+                                        <select class="form-select" name="adversario-column">
+                                            <?php foreach ($clubes as $clube) : ?>
+                                                <option value="<?= $clube->nome_clube ?>"><?= $clube->nome_clube ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </fieldset>
                                 </div>
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
@@ -63,7 +60,7 @@
                                 <div class="col-12 d-flex justify-content-end">
                                     <button type="submit" class="btn btn-danger me-1 mb-1">Inserir jogo</button>
                                     <button type="reset" class="btn btn-dark me-1 mb-1">Limpar campos</button>
-                                    <a href="/tabela_jogos" ><button type="button" class="btn btn-danger">Voltar à tabela</button></a>
+                                    <a href="/tabela_jogos"><button type="button" class="btn btn-danger">Voltar à tabela</button></a>
                                 </div>
                             </div>
                         </form>

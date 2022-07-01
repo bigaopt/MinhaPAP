@@ -38,21 +38,21 @@ class Equipas extends Model
     {
         $db = db_connect(); 
 
-        $vitorias = $db->query("UPDATE `equipas` SET `vitorias` = (select count(tipo_resultado) as vitorias from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'juniores' and jogos.tipo_resultado like 'vito%') WHERE `equipas`.`id_equipa` = 1 ;");
+        $vitorias = $db->query("UPDATE `equipas` SET `vitorias` = (select count(resultado) as vitorias from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'juniores' and jogos.resultado like 'vito%') WHERE `equipas`.`id_equipa` = 1 ;");
     }
 
     public function atualizar_numero_empates_juniores()
     {
         $db = db_connect(); 
 
-        $empates = $db->query("UPDATE `equipas` SET `empates` = (select count(tipo_resultado) as empates from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'juniores' and jogos.tipo_resultado like 'emp%') WHERE `equipas`.`id_equipa` = 1 ;");
+        $empates = $db->query("UPDATE `equipas` SET `empates` = (select count(resultado) as empates from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'juniores' and jogos.resultado like 'emp%') WHERE `equipas`.`id_equipa` = 1 ;");
     }
 
     public function atualizar_numero_derrotas_juniores()
     {
         $db = db_connect(); 
 
-        $derrotas = $db->query("UPDATE `equipas` SET `derrotas` = (select count(tipo_resultado) as derrotas from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'juniores' and jogos.tipo_resultado like 'derro%') WHERE `equipas`.`id_equipa` = 1 ;");
+        $derrotas = $db->query("UPDATE `equipas` SET `derrotas` = (select count(resultado) as derrotas from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'juniores' and jogos.resultado like 'derro%') WHERE `equipas`.`id_equipa` = 1 ;");
     }
 
 
@@ -80,21 +80,21 @@ class Equipas extends Model
     {
         $db = db_connect(); 
 
-        $vitorias = $db->query("UPDATE `equipas` SET `vitorias` = (select count(tipo_resultado) as vitorias from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'seniores' and jogos.tipo_resultado like 'vito%') WHERE `equipas`.`id_equipa` = 2 ;");
+        $vitorias = $db->query("UPDATE `equipas` SET `vitorias` = (select count(resultado) as vitorias from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'seniores' and jogos.resultado like 'vito%') WHERE `equipas`.`id_equipa` = 2 ;");
     }
 
     public function atualiza_numero_empates_seniores()
     {
         $db = db_connect(); 
 
-        $empates = $db->query("UPDATE `equipas` SET `empates` = (select count(tipo_resultado) as empates from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'seniores' and jogos.tipo_resultado like 'emp%') WHERE `equipas`.`id_equipa` = 2 ;");
+        $empates = $db->query("UPDATE `equipas` SET `empates` = (select count(resultado) as empates from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'seniores' and jogos.resultado like 'emp%') WHERE `equipas`.`id_equipa` = 2 ;");
     }
 
     public function atualiza_numero_derrotas_seniores()
     {
         $db = db_connect(); 
 
-        $derrotas = $db->query("UPDATE `equipas` SET `derrotas` = (select count(tipo_resultado) as derrotas from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'seniores' and jogos.tipo_resultado like 'derro%') WHERE `equipas`.`id_equipa` = 2 ;");
+        $derrotas = $db->query("UPDATE `equipas` SET `derrotas` = (select count(resultado) as derrotas from jogos , equipas where jogos.id_equipa = equipas.id_equipa and equipas.nome_escalao like 'seniores' and jogos.resultado like 'derro%') WHERE `equipas`.`id_equipa` = 2 ;");
     }
 
 

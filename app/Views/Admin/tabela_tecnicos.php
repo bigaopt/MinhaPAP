@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card card-tabelas">
     <div class="card-header"><br>
         <br>
         <h4 class="d-inline"> Tabela Técnicos </h4>

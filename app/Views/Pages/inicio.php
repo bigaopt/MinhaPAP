@@ -14,8 +14,12 @@
                                         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
                                         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
                                         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
                                     </ol>
                                     <div class="carousel-inner" id="not">
+                                         <div class="carousel-item">
+                                            <img src="https://scontent.fopo6-2.fna.fbcdn.net/v/t39.30808-6/280491594_412160057580994_2363366396023841115_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeF-J56FHyoQraii33aAVIX-k95zK-X_cyKT3nMr5f9zIuNDMrI6edvd9nZNNdzw5egyifgvQ3j7ebkkyVtQsnnl&_nc_ohc=Ee2UeDuVDVYAX_iO4oW&_nc_ht=scontent.fopo6-2.fna&oh=00_AT86uspMMLTxdbUrMqjgE4eq6E53-1CtlMA7chw5qt8Kew&oe=62C0DBFF" class="d-block w-100" alt="...">
+                                        </div>
                                         <div class="carousel-item active">
                                             <img src="Img/caminhada/foto_caminhada.jpg" class="d-block w-100" alt="...">
                                         </div>
@@ -79,7 +83,6 @@
                                             <th>Nome Equipa</th>
                                             <th>Adversário</th>
                                             <th>Resultado</th>
-                                            <th>Tipo de Resultado</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -91,7 +94,6 @@
                                                 <td><?= $jogo->nome_equipa; ?></td>
                                                 <td><?= $jogo->adversario; ?></td>
                                                 <td><?= $jogo->resultado; ?></td>
-                                                <td><?= $jogo->tipo_resultado; ?></td>
                                             </tr>
                                         <?php endforeach ?>
                                     </tbody>
@@ -103,5 +105,4 @@
             </div>
         </section>
     </div>
-
 </div>

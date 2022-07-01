@@ -26,6 +26,17 @@ body{
     margin-left: 5em;
 }
 
+.card-tabelas{
+    margin: 1em 2em;
+}
+
+/*degrade no texto das noticias */
+.carousel-caption{
+
+    background-image:linear-gradient(0deg,black,transparent);
+    height : 20%;   
+}
+
 /*------------------------------- inputs -------------------------------------------*/
 label {
     color:black;

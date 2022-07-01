@@ -1,0 +1,20 @@
+CRITICAL - 2022-06-29 05:51:24 --> Unclosed '{' on line 15
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Admini...')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Club...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(607): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Club...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->inserir_clube()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#8 {main}
+CRITICAL - 2022-06-29 05:51:35 --> Unclosed '{' on line 15
+#0 C:\Users\Administrador\Documents\Projeto_PAP\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Admini...')
+#1 C:\Users\Administrador\Documents\Projeto_PAP\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Club...')
+#2 C:\Users\Administrador\Documents\Projeto_PAP\app\Controllers\Admin.php(579): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Club...')
+#3 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(832): App\Controllers\Admin->pagina_tabela_clubes()
+#4 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\Administrador\Documents\Projeto_PAP\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Administrador\Documents\Projeto_PAP\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Administrador\Documents\Projeto_PAP\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\Admini...')
+#8 {main}

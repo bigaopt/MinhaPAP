@@ -15,6 +15,7 @@
                                 </div>
                                 <div class="card-footer text-center">
                                     <p> 29 de Março de 2022</p>
+                                    <p>(Notícia retirada do facebook)</p> 
                                 </div>
                             </div>
                         </div>
@@ -30,11 +31,12 @@
                                 </div>
                                 <div class="card-footer text-center">
                                     <p> 13 de Abril de 2022</p>
+                                    <p>(Notícia retirada do facebook)</p> 
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                 </div>
                 <div class="col-12">
                     <div class="card">
@@ -68,11 +70,12 @@
                         </div>
                         <div class="card-footer text-center">
                             <p> 13 de setembro de 2022</p>
+                            <p>(Notícia retirada do facebook)</p> 
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-12 col-lg-3">
+             <!-- <div class="col-12 col-lg-3">
                 <div class="card">
                     <div class="card-header">
                         <h4>"La Remontada"</h4>
@@ -83,17 +86,18 @@
                     </div>
                     <div class="card-footer text-center">
                         <p> 29 de Abril de 2022</p>
+                        <p>(noticia retirada do facebook)</p>
                     </div>
                 </div>
-                <div class="card">
+                 <div class="card">
                     <div class="card-header">
                         <h4>Visitors Profile</h4>
                     </div>
                     <div class="card-body">
                         <div id="chart-visitors-profile"></div>
                     </div>
-                </div>
-            </div> -->
+                </div> 
+            </div>  -->
         </section>
     </div>
 

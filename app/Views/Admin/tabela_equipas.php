@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card card-tabelas">
     <div class="card-header">
         <br><h4 class="d-inline"> Tabela das equipas </h4>
         <div class="btn-group mb-3 float-right d-inline" role="group" aria-label="Basic example" style="float:right;">

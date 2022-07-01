@@ -9,14 +9,14 @@ class Jogos extends Model
     protected $table = 'jogos';
     protected $primaryKey = 'id_jogo';
     protected $returnType = 'array';
-    protected $allowedFields = ['dia','hora','local','id_equipa','adversario','resultado','tipo_resultado'];
+    protected $allowedFields = ['dia','hora','local','id_equipa','adversario','resultado'];
 
     public function getjogos_juniores()
     {
 
         $db = db_connect();
         
-        $query = $db->query("select j.id_jogo, j.dia ,j.hora, j.local,e.nome_equipa,j.adversario,j.resultado,j.tipo_resultado from jogos j, equipas e where j.id_equipa = e.id_equipa and e.nome_escalao like 'juniores' ");
+        $query = $db->query("select j.id_jogo, j.dia ,j.hora, j.local,e.nome_equipa,j.adversario,j.resultado from jogos j, equipas e where j.id_equipa = e.id_equipa and e.nome_escalao like 'juniores' ");
         
         return $query->getResult();    
 
@@ -26,7 +26,7 @@ class Jogos extends Model
     {
         $db = db_connect();
 
-        $query = $db->query("select j.dia,j.hora,j.local,e.nome_equipa,j.adversario,j.resultado,j.tipo_resultado from jogos j , equipas e where j.id_equipa = e.id_equipa order by dia DESC limit 8");
+        $query = $db->query("select j.dia,j.hora,j.local,e.nome_equipa,j.adversario,j.resultado from jogos j , equipas e where j.id_equipa = e.id_equipa and j.estado like 'ativo' order by dia DESC limit 8");
 
         return $query->getResult();
     }
@@ -36,7 +36,7 @@ class Jogos extends Model
     {
         $db = db_connect();
         
-        $query = $db->query("select j.id_jogo, j.dia ,j.hora, j.local,e.nome_equipa,j.adversario,j.resultado,j.tipo_resultado from jogos j, equipas e where j.id_equipa = e.id_equipa and e.nome_escalao like 'seniores' ");
+        $query = $db->query("select j.id_jogo, j.dia ,j.hora, j.local,e.nome_equipa,j.adversario,j.resultado from jogos j, equipas e where j.id_equipa = e.id_equipa and e.nome_escalao like 'seniores' ");
         
         return $query->getResult();  
     }
@@ -45,7 +45,7 @@ class Jogos extends Model
     {
         $db = db_connect();
         
-        $query = $db->query("select jogos.id_jogo,jogos.dia,jogos.hora,jogos.local,equipas.nome_equipa ,jogos.adversario,jogos.resultado,jogos.tipo_resultado from jogos, equipas  where jogos.estado like 'ativo' and jogos.id_equipa = equipas.id_equipa");
+        $query = $db->query("select jogos.id_jogo,jogos.dia,jogos.hora,jogos.local,equipas.nome_equipa ,jogos.adversario,jogos.resultado from jogos, equipas  where jogos.estado like 'ativo' and jogos.id_equipa = equipas.id_equipa order by dia desc");
         
         return $query->getResult();  
     }

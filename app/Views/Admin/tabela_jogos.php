@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card card-tabelas">
     <div class="card-header">
         <br><h4 class="d-inline"> Tabela dos jogos </h4>
         <div class="btn-group mb-3 float-right d-inline" role="group" aria-label="Basic example" style="float:right;">
@@ -16,7 +16,6 @@
                     <th>Equipa</th>
                     <th>Adversario</th>
                     <th>Resultado</th>
-                    <th>Tipo_Resultado</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,13 +28,11 @@
                         <td><?= $jogo->nome_equipa; ?></td>
                         <td><?= $jogo->adversario; ?></td>
                         <td><?= $jogo->resultado; ?></td>
-                        <td><?= $jogo->tipo_resultado; ?></td>
 
-                        <td><button class="btn btn-dark"> <a href="<?= base_url('/confirmaçao_jogo/' . $jogo->id_jogo) ?>"><i class="bi bi-trash-fill"></i><a></button></td>
                         <td><button class="btn btn-dark" onclick="apagar_jogo('<?php echo $jogo->id_jogo ?>','<?php echo $jogo->nome_equipa ?>','<?php echo $jogo->adversario ?>')"> <i class="bi bi-trash-fill"></i> </button></td>
                     </tr>
                 <?php endforeach ?>
-            </tbody>
+                </tbody>
         </table>
     </div>
 </div>

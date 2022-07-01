@@ -25,18 +25,17 @@
     <!-- Main CSS-->
     <link href="assets/Css/main.css" rel="stylesheet" media="all">
 </head>
-
 <body>
     <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <h1 class="title">Sign up</h1>                
+                    <h1 class="title">Registo</h1>                
                     <form action="<?php echo base_url('Users/signup'); ?>" method="POST">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-4" type="text" name="inputUsername" placeholder="Username">
+                                    <input class="input--style-4" type="text" name="inputUsername" placeholder="Utilizador">
                                 </div>
                             </div>
                         </div>
@@ -50,12 +49,12 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-4" type="password" name="inputPassword" placeholder="Password">
+                                    <input class="input--style-4" type="password" name="inputPassword" placeholder="Palavra passe">
                                 </div>
                             </div>
                         </div>
                         <div class="p-t-15 ">
-                            <button class="btn btn--radius-2 btn--blue">Sign up</button>
+                            <button class="btn btn--radius-2 btn--blue">registar</button>
                         </div>
                         <a href="login">Login</a>
                     </form>

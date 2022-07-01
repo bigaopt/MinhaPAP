@@ -1,7 +1,7 @@
 <section id="multiple-column-form">
     <div class="row match-height">
         <div class="col-12">
-            <div class="card">
+            <div class="card card-tabelas">
                 <div class="card-header">
                     <h4 class="card-title">Atualizar Jogador</h4>
                 </div>

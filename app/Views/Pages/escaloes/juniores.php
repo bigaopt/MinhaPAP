@@ -169,11 +169,11 @@
                                             <h5>Técnicos</h5>
                                             <div class="row">
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/juniores/Treinador Helder juniores.PNG" width="100%" height="100%" >
+                                                    <img src="Img/juniores/Treinador Helder juniores.PNG" width="100%" height="" >
                                                     <p>Helder Sousa</p>
                                                 </div>
                                                 <div class="col-3 text-center">
-                                                    <img src="Img/juniores/Treinador Eduardo juniores.PNG" width="100%"  >
+                                                    <img src="Img/juniores/Treinador Eduardo juniores.PNG" width="100%" height="" >
                                                     <p>Eduardo Sousa</p>
                                                 </div>
                                                 <div class="col-3 text-center">
@@ -197,7 +197,6 @@
                                                         <th>Nome Equipa</th>
                                                         <th>Adversário</th>
                                                         <th>Resultado</th>
-                                                        <th>Tipo de Resultado</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -208,8 +207,7 @@
                                                             <td><?= $jogo->local; ?></td>
                                                             <td><?= $jogo->nome_equipa; ?></td>
                                                             <td><?= $jogo->adversario; ?></td>
-                                                            <td><?= $jogo->resultado; ?></td>
-                                                            <td><?= $jogo->tipo_resultado; ?></td>
+                                                            <td><?= $jogo->resultado; ?></td>        
                                                         </tr>
                                                     <?php endforeach ?>
                                                 </tbody>
