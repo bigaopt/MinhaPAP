@@ -9,11 +9,11 @@ clubeApp.home = function () {
             window.location.href = 'http://localhost:8080/noticias';
         });
     };
-
-   
     
+
     return {
         init: init,
+        
     };
 
 }();

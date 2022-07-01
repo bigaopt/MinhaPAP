@@ -10,10 +10,10 @@
                             </div>
                             <div class="card-body">
                                 <p>
-                                O Grupo Desportivo Milheiroense foi fundado em 23 de outubro de 1975 e o seu atual presidente é Fernando Campos.
+                                    O Grupo Desportivo Milheiroense foi fundado em 23 de outubro de 1975 e o seu atual presidente é Fernando Campos.
                                 </p>
                                 <p>
-                                Na época atual(2021 – 2022), a equipa dos seniores participa no campeonato distrital da 1.ª Divisão distrital.
+                                    Na época atual(2021 – 2022), a equipa dos seniores participa no campeonato distrital da 1.ª Divisão distrital.
                                 </p>
                                 <div class="googlemaps">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.2123187085213!2d-8.475286948766993!3d40.91109033324654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7765393e067ae381!2sGrupo%20Desportivo%20Milheiroense!5e0!3m2!1spt-PT!2spt!4v1649691697979!5m2!1spt-PT!2spt" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -143,80 +143,77 @@
                 <div class="card-body">
                 </div>
                 <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Formulário de Contacto</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <form class="form form-horizontal" method="POST" action="">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-md-2">
-                                                <label>Nome :</label>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <div class="form-group has-icon-left">
-                                                    <div class="position-relative">
-                                                        <input type="text" class="form-control" placeholder="Nome" required id="nome">
-                                                        <div class="form-control-icon">
-                                                            <i class="bi bi-person"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label>Email :</label>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <div class="form-group has-icon-left">
-                                                    <div class="position-relative">
-                                                        <input type="email" class="form-control" placeholder="Email"  required id="email">
-                                                        <div class="form-control-icon">
-                                                            <i class="bi bi-at"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label>Assunto :</label>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <div class="form-group has-icon-left">
-                                                    <div class="position-relative">
-                                                        <input type="text" class="form-control"  placeholder="Assunto" required id="assunto">
-                                                        <div class="form-control-icon">
-                                                            <i class="bi bi-phone"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label>Mensagem:</label>
-                                            </div>
-                                            <div class="col-md-10">
-                                                <div class="form-group has-icon-left">
-                                                    
-                                                    <div class="position-relative">
-                                                        <div class="form-control-icon">
-                                                            <i class="bi bi-envelope"></i>
-                                                        </div>
-                                                        <textarea class="form-control"  rows="2" placeholder="Mensagem" required id="mensagem"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12 d-flex justify-content-end">
-                                                <button type="submit" id="enviar" class="btn btn-danger me-1 mb-1">Enviar</button>
+                    <div class="card-header">
+                        <h4 class="card-title">Formulário de Contacto</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label>Nome :</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="form-group has-icon-left">
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control" placeholder="Nome" required id="nome">
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-person"></i>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-md-2">
+                                    <label>Email :</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="form-group has-icon-left">
+                                        <div class="position-relative">
+                                            <input type="email" class="form-control" placeholder="Email" id="email" required>
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-at"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label>Assunto :</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="form-group has-icon-left">
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control" placeholder="Assunto" required id="assunto">
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-phone"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label>Mensagem:</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="form-group has-icon-left">
+
+                                        <div class="position-relative">
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-envelope"></i>
+                                            </div>
+                                            <textarea class="form-control" rows="2" placeholder="Mensagem" id="mensagem" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" onclick="envEmail()" class="btn btn-danger me-1 mb-1">Enviar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
     </div>
-    </section>
+</div>
+</section>
 </div>
 
 </div>
